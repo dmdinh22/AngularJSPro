@@ -1,5 +1,6 @@
 function Counter() {
     return {
+        // scope: true,
         scope: {
             count: '='
         },
