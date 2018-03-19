@@ -13,6 +13,7 @@ function counter() {
 			</div>
 		`,
         link: function ($scope, $element, $attrs) {
+            console.log($attrs);
             $attrs.$observe('name', function (value) {
                 if (value === 'Food counter') {
                     $attrs.$updateClass('counter--food', 'counter--drink');

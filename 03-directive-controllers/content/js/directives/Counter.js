@@ -9,6 +9,7 @@ function counter() {
 			</div>
 		`,
         controller: 'CounterController as counter'
+        //contollerAs: 'counter'
     };
 }
 
