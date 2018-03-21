@@ -1,6 +1,6 @@
 function ContactCard() {
     return {
-        transclude: true, // templating things inside a template
+        transclude: true, // templating things insidegit sat a template
         template: `
 			<div>
 				<h4>Contact</h4>
