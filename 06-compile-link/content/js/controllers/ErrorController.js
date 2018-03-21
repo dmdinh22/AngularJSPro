@@ -8,7 +8,7 @@ function ErrorController() {
     },{
         message: 'This is invalid',
         type: 'invalid'
-    }]
+    }];
 }
 
 angular
