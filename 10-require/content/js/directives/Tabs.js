@@ -17,6 +17,7 @@ function tabs() {
             var ctrl = this;
             ctrl.list = [];
             ctrl.addTab = function (tab) {
+                // if the list is empty, set first tab selected as true
                 if (!ctrl.list.length) {
                     tab.selected = true;
                 }
