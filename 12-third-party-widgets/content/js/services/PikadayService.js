@@ -1,10 +1,11 @@
 function PikadayService() {
-	return function (options) {
-		return new Pikaday(options);
-	}
+    return function (options) {
+        // new instance of pikaday
+        return new Pikaday(options);
+    };
 }
 
 
 angular
-	.module('app')
-	.factory('PikadayService', PikadayService);
+    .module('app')
+    .factory('PikadayService', PikadayService);

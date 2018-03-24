@@ -1,7 +1,8 @@
 function DateController() {
-	this.date = new Date();
+    // pass into directive
+    this.date = new Date(); 
 }
 
 angular
-	.module('app')
-	.controller('DateController', DateController);
+    .module('app')
+    .controller('DateController', DateController);
