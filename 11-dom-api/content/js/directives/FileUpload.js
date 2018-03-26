@@ -5,7 +5,7 @@ function FileUpload() {
 			<div class="upload">
 				<div class="upload-zone">
 					<p>Drop your files here!</p>
-					<a href="" ng-click="upload.uploadFiles();">
+					<a href="" ng-click="upload.uploadFiles()">
 						Upload
 					</a>
 				</div>

@@ -21988,7 +21988,7 @@ var inputType = {
           // set the value of the element and force validation.
           var scr = "var ipt = document.getElementById('exampleInput'); " +
           "ipt.value = '" + val + "';" +
-          "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); });";
+          "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); })";
           browser.executeScript(scr);
         }
 
@@ -22091,7 +22091,7 @@ var inputType = {
         // set the value of the element and force validation.
         var scr = "var ipt = document.getElementById('exampleInput'); " +
         "ipt.value = '" + val + "';" +
-        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); });";
+        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); })";
         browser.executeScript(scr);
       }
 
@@ -22195,7 +22195,7 @@ var inputType = {
         // set the value of the element and force validation.
         var scr = "var ipt = document.getElementById('exampleInput'); " +
         "ipt.value = '" + val + "';" +
-        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); });";
+        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); })";
         browser.executeScript(scr);
       }
 
@@ -22300,7 +22300,7 @@ var inputType = {
         // set the value of the element and force validation.
         var scr = "var ipt = document.getElementById('exampleInput'); " +
         "ipt.value = '" + val + "';" +
-        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); });";
+        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); })";
         browser.executeScript(scr);
       }
 
@@ -22404,7 +22404,7 @@ var inputType = {
         // set the value of the element and force validation.
         var scr = "var ipt = document.getElementById('exampleInput'); " +
         "ipt.value = '" + val + "';" +
-        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); });";
+        "angular.element(ipt).scope().$apply(function(s) { s.myForm[ipt.name].$setViewValue('" + val + "'); })";
         browser.executeScript(scr);
       }
 

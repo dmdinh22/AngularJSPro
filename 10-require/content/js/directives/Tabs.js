@@ -5,7 +5,7 @@ function tabs() {
 			<div class="tabs">
 				<ul class="tabs__list">
 					<li ng-repeat="tab in tabs.list">
-						<a href="" ng-click="tabs.selectTab($index);">
+						<a href="" ng-click="tabs.selectTab($index)">
 							{{ tab.label }}
 						</a>
 					</li>

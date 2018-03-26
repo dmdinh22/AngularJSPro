@@ -1,24 +1,25 @@
 var statefulComponent = {
-	template: `
+    template: `
 		<div>
 			<pre>{{ $ctrl.user | json }}</pre>
 			<stateless-component
 				user="$ctrl.user"
-				on-update="$ctrl.updateUser($event);">
+				on-update="$ctrl.updateUser($event)">
 			</stateless-component>
 		</div>
 	`,
-	controller: function () {
-		this.user = {
-			name: 'Todd Motto',
-			location: 'England, UK'
-		};
-		this.updateUser = function (event) {
-			this.user = event.user;
-		};
-	}
+    controller: function () {
+        // stateful component because it fetches data from a source
+        this.user = {
+            name: 'Todd Motto',
+            location: 'England, UK'
+        };
+        this.updateUser = function (event) {
+            this.user = event.user;
+        };
+    }
 };
 
 angular
-	.module('app')
-	.component('statefulComponent', statefulComponent);
+    .module('app')
+    .component('statefulComponent', statefulComponent);

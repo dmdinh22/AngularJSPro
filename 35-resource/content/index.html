@@ -17,11 +17,11 @@
 			</div>
 			<ul>
 				<li ng-repeat="todo in todos.list">
-					<input ng-model="todo.title" ng-blur="todos.updateTodo(todo);">
+					<input ng-model="todo.title" ng-blur="todos.updateTodo(todo)">
 					<div>
 						{{ todo.completed ? 'Completed' : 'Not Completed' }}
 					</div>
-					<a href="" ng-click="todos.deleteTodo(todo);">
+					<a href="" ng-click="todos.deleteTodo(todo)">
 						Delete Todo
 					</a>
 				</li>

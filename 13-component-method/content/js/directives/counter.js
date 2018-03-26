@@ -15,9 +15,9 @@ function counter() {
         controllerAs: 'counter',
         template: `
 			<div class="todo">
-				<button type="button" ng-click="counter.decrement();">-</button>
+				<button type="button" ng-click="counter.decrement()">-</button>
 				<input type="text" ng-model="counter.count">
-				<button type="button" ng-click="counter.increment();">+</button>
+				<button type="button" ng-click="counter.increment()">+</button>
 			</div>
 		`
     };

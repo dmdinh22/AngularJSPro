@@ -11,9 +11,11 @@ var tabs = {
             }
             this.tabs[index].selected = true;
         };
+        // postLink lifecycle hook
         this.$postLink = function () {
             this.selectTab(0);
         };
+        // onDestroy lifecycle hook
         this.$onDestroy = function () {
 
         };
@@ -24,7 +26,7 @@ var tabs = {
 				<li ng-repeat="tab in $ctrl.tabs">
 					<a href=""
 						ng-bind="tab.label"
-						ng-click="$ctrl.selectTab($index);"></a>
+						ng-click="$ctrl.selectTab($index)"></a>
 				</li>
 			</ul>
 			<div class="tabs__content" ng-transclude></div>

@@ -18,7 +18,7 @@ var userManager = {
 		$scope.$on('$destroy', unbind);
 	},
 	template: `
-		<form ng-submit="$ctrl.loginUser();" class="child">
+		<form ng-submit="$ctrl.loginUser()" class="child">
 			<div>
 				Name: <input type="text" ng-model="$ctrl.user.name">
 			</div>
