@@ -1,19 +1,21 @@
 var userManager = {
-	bindings: {},
-	controller: function ($scope) {
-		var ctrl = this;
-		ctrl.user = {
-			name: '',
-			email: ''
-		};
-		ctrl.loginUser = function () {
-			$scope.$emit('login', ctrl.user);
-		};
-		$scope.$on('logout', function (event, data) {
-			console.log(data);
-		});
-	},
-	template: `
+    bindings: {},
+    //					$scope obj to emit events
+    controller: function ($scope) {
+        var ctrl = this;
+        ctrl.user = {
+            name: '',
+            email: ''
+        };
+        ctrl.loginUser = function () {
+            // using emit method, passing in event and object for the event
+            $scope.$emit('login', ctrl.user);
+        };
+        $scope.$on('logout', function (event, data) {
+            console.log(data);
+        });
+    },
+    template: `
 		<form ng-submit="$ctrl.loginUser()" class="child">
 			<div>
 				Name: <input type="text" ng-model="$ctrl.user.name">
@@ -29,5 +31,5 @@ var userManager = {
 };
 
 angular
-	.module('app')
-	.component('userManager', userManager);
+    .module('app')
+    .component('userManager', userManager);

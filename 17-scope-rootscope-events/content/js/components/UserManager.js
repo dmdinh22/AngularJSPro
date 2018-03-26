@@ -1,23 +1,24 @@
 var userManager = {
-	bindings: {},
-	controller: function ($rootScope, $scope) {
-		var ctrl = this;
-		ctrl.user = {
-			name: '',
-			email: ''
-		};
-		ctrl.loginUser = function () {
-			$scope.$emit('login', ctrl.user);
-		};
-		var unbind = $rootScope.$on('logout', function (event, data) {
-			console.log('$rootScope:', data);
-		});
-		$scope.$on('logout', function (event, data) {
-			console.log('$scope:', data);
-		});
-		$scope.$on('$destroy', unbind);
-	},
-	template: `
+    bindings: {},
+    controller: function ($rootScope, $scope) {
+        var ctrl = this;
+        ctrl.user = {
+            name: '',
+            email: ''
+        };
+        ctrl.loginUser = function () {
+            $scope.$emit('login', ctrl.user);
+        };
+        var unbind = $rootScope.$on('logout', function (event, data) {
+            console.log('$rootScope:', data);
+        });
+        $scope.$on('logout', function (event, data) {
+            console.log('$scope:', data);
+        });
+        // clean up event handlers
+        $scope.$on('$destroy', unbind);
+    },
+    template: `
 		<form ng-submit="$ctrl.loginUser()" class="child">
 			<div>
 				Name: <input type="text" ng-model="$ctrl.user.name">
@@ -33,5 +34,5 @@ var userManager = {
 };
 
 angular
-	.module('app')
-	.component('userManager', userManager);
+    .module('app')
+    .component('userManager', userManager);
