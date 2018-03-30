@@ -9,7 +9,9 @@ angular
     .component('contactPhone', contactPhone)
     .config(function ($stateProvider) {
         $stateProvider
+        // phone state is a child state of contact state
             .state('contact.phone', {
+                // ^ means "do not inherit /contact"
                 url: '^/phone',
                 component: 'contactPhone'
             });

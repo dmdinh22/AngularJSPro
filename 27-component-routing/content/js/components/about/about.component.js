@@ -11,6 +11,6 @@ angular
         $stateProvider
             .state('about', {
                 url: '/about',
-                component: 'about'
+                component: 'about' // component to render
             });
     });;

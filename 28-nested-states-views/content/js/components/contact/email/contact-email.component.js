@@ -9,6 +9,7 @@ angular
     .component('contactEmail', contactEmail)
     .config(function ($stateProvider) {
         $stateProvider
+        // contact state is a child state of contact state
             .state('contact.email', {
                 url: '/email',
                 component: 'contactEmail'

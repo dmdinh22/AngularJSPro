@@ -17,6 +17,7 @@ angular
     .config(function ($stateProvider) {
         $stateProvider
             .state('contact', {
+                // set default redirect to phone state
                 redirectTo: 'contact.phone',
                 url: '/contact',
                 component: 'contact'

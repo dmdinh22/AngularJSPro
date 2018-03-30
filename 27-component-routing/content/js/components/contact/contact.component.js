@@ -10,7 +10,7 @@ angular
     .config(function ($stateProvider) {
         $stateProvider
             .state('contact', {
-                url: '/contact',
-                component: 'contact'
+                url: '/contact', //route
+                component: 'contact' // component to render
             });
     });
