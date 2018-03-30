@@ -5,147 +5,147 @@
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 (function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define("angular-ui-router", [], factory);
-	else if(typeof exports === 'object')
-		exports["angular-ui-router"] = factory();
-	else
-		root["angular-ui-router"] = factory();
+    if(typeof exports === 'object' && typeof module === 'object')
+        module.exports = factory();
+    else if(typeof define === 'function' && define.amd)
+        define("angular-ui-router", [], factory);
+    else if(typeof exports === 'object')
+        exports["angular-ui-router"] = factory();
+    else
+        root["angular-ui-router"] = factory();
 })(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-/******/
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ function(module, exports, __webpack_require__) {
+    return /******/ (function(modules) { // webpackBootstrap
+        /******/ 	// The module cache
+        /******/ 	var installedModules = {};
+        /******/
+        /******/ 	// The require function
+        /******/ 	function __webpack_require__(moduleId) {
+            /******/
+            /******/ 		// Check if module is in cache
+            /******/ 		if(installedModules[moduleId])
+            /******/ 			return installedModules[moduleId].exports;
+            /******/
+            /******/ 		// Create a new module (and put it into the cache)
+            /******/ 		var module = installedModules[moduleId] = {
+                /******/ 			exports: {},
+                /******/ 			id: moduleId,
+                /******/ 			loaded: false
+                /******/ 		};
+            /******/
+            /******/ 		// Execute the module function
+            /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+            /******/
+            /******/ 		// Flag the module as loaded
+            /******/ 		module.loaded = true;
+            /******/
+            /******/ 		// Return the exports of the module
+            /******/ 		return module.exports;
+            /******/ 	}
+        /******/
+        /******/
+        /******/ 	// expose the modules object (__webpack_modules__)
+        /******/ 	__webpack_require__.m = modules;
+        /******/
+        /******/ 	// expose the module cache
+        /******/ 	__webpack_require__.c = installedModules;
+        /******/
+        /******/ 	// __webpack_public_path__
+        /******/ 	__webpack_require__.p = "";
+        /******/
+        /******/ 	// Load entry module and return exports
+        /******/ 	return __webpack_require__(0);
+        /******/ })
+    /************************************************************************/
+    /******/ ([
+        /* 0 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/**
+            /**
 	 * Main entry point for angular 1.x build
 	 * @module ng1
 	 */
-	/** for typedoc */
-	"use strict";
-	function __export(m) {
+            /** for typedoc */
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	__export(__webpack_require__(1));
-	__export(__webpack_require__(53));
-	__export(__webpack_require__(55));
-	__webpack_require__(58);
-	__webpack_require__(59);
-	__webpack_require__(60);
-	__webpack_require__(61);
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = "ui.router";
+            }
+            __export(__webpack_require__(1));
+            __export(__webpack_require__(53));
+            __export(__webpack_require__(55));
+            __webpack_require__(58);
+            __webpack_require__(59);
+            __webpack_require__(60);
+            __webpack_require__(61);
+            Object.defineProperty(exports, "__esModule", { value: true });
+            exports.default = "ui.router";
 
 
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 1 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module common */ /** */
-	"use strict";
-	function __export(m) {
+            /** @module common */ /** */
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	__export(__webpack_require__(2));
-	__export(__webpack_require__(46));
-	__export(__webpack_require__(47));
-	__export(__webpack_require__(48));
-	__export(__webpack_require__(49));
-	__export(__webpack_require__(50));
-	__export(__webpack_require__(51));
-	__export(__webpack_require__(52));
-	__export(__webpack_require__(44));
-	var router_1 = __webpack_require__(26);
-	exports.UIRouter = router_1.UIRouter;
+            }
+            __export(__webpack_require__(2));
+            __export(__webpack_require__(46));
+            __export(__webpack_require__(47));
+            __export(__webpack_require__(48));
+            __export(__webpack_require__(49));
+            __export(__webpack_require__(50));
+            __export(__webpack_require__(51));
+            __export(__webpack_require__(52));
+            __export(__webpack_require__(44));
+            var router_1 = __webpack_require__(26);
+            exports.UIRouter = router_1.UIRouter;
 
 
-/***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 2 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module common */ /** for typedoc */
-	__export(__webpack_require__(3));
-	__export(__webpack_require__(6));
-	__export(__webpack_require__(7));
-	__export(__webpack_require__(5));
-	__export(__webpack_require__(4));
-	__export(__webpack_require__(8));
-	__export(__webpack_require__(9));
-	__export(__webpack_require__(12));
+            }
+            /** @module common */ /** for typedoc */
+            __export(__webpack_require__(3));
+            __export(__webpack_require__(6));
+            __export(__webpack_require__(7));
+            __export(__webpack_require__(5));
+            __export(__webpack_require__(4));
+            __export(__webpack_require__(8));
+            __export(__webpack_require__(9));
+            __export(__webpack_require__(12));
 
 
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 3 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/**
+            /**
 	 * Random utility functions used in the UI-Router code
 	 *
 	 * @preferred @module common
 	 */ /** for typedoc */
-	"use strict";
-	var predicates_1 = __webpack_require__(4);
-	var hof_1 = __webpack_require__(5);
-	var coreservices_1 = __webpack_require__(6);
-	var w = typeof window === 'undefined' ? {} : window;
-	var angular = w.angular || {};
-	exports.fromJson = angular.fromJson || JSON.parse.bind(JSON);
-	exports.toJson = angular.toJson || JSON.stringify.bind(JSON);
-	exports.copy = angular.copy || _copy;
-	exports.forEach = angular.forEach || _forEach;
-	exports.extend = angular.extend || _extend;
-	exports.equals = angular.equals || _equals;
-	exports.identity = function (x) { return x; };
-	exports.noop = function () { return undefined; };
-	exports.abstractKey = 'abstract';
-	/**
+            "use strict";
+            var predicates_1 = __webpack_require__(4);
+            var hof_1 = __webpack_require__(5);
+            var coreservices_1 = __webpack_require__(6);
+            var w = typeof window === 'undefined' ? {} : window;
+            var angular = w.angular || {};
+            exports.fromJson = angular.fromJson || JSON.parse.bind(JSON);
+            exports.toJson = angular.toJson || JSON.stringify.bind(JSON);
+            exports.copy = angular.copy || _copy;
+            exports.forEach = angular.forEach || _forEach;
+            exports.extend = angular.extend || _extend;
+            exports.equals = angular.equals || _equals;
+            exports.identity = function (x) { return x; };
+            exports.noop = function () { return undefined; };
+            exports.abstractKey = 'abstract';
+            /**
 	 * Binds and copies functions onto an object
 	 *
 	 * Takes functions from the 'from' object, binds those functions to the _this object, and puts the bound functions
@@ -200,20 +200,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param bindTo The object which the functions will be bound to
 	 * @param fnNames The function names which will be bound (Defaults to all the functions found on the 'from' object)
 	 */
-	function bindFunctions(from, to, bindTo, fnNames) {
+            function bindFunctions(from, to, bindTo, fnNames) {
 	    if (fnNames === void 0) { fnNames = Object.keys(from); }
 	    return fnNames.filter(function (name) { return typeof from[name] === 'function'; })
 	        .forEach(function (name) { return to[name] = from[name].bind(bindTo); });
-	}
-	exports.bindFunctions = bindFunctions;
-	/**
+            }
+            exports.bindFunctions = bindFunctions;
+            /**
 	 * prototypal inheritance helper.
 	 * Creates a new object which has `parent` object as its prototype, and then copies the properties from `extra` onto it
 	 */
-	exports.inherit = function (parent, extra) {
+            exports.inherit = function (parent, extra) {
 	    return exports.extend(new (exports.extend(function () { }, { prototype: parent }))(), extra);
-	};
-	/**
+            };
+            /**
 	 * Given an arguments object, converts the arguments at index idx and above to an array.
 	 * This is similar to es6 rest parameters.
 	 *
@@ -236,25 +236,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *        pick(obj, "foo", "bar");   // returns { foo: 1, bar: 2 }
 	 *        pick(obj, ["foo", "bar"]); // returns { foo: 1, bar: 2 }
 	 */
-	var restArgs = function (args, idx) {
+            var restArgs = function (args, idx) {
 	    if (idx === void 0) { idx = 0; }
 	    return Array.prototype.concat.apply(Array.prototype, Array.prototype.slice.call(args, idx));
-	};
-	/** Given an array, returns true if the object is found in the array, (using indexOf) */
-	exports.inArray = function (array, obj) { return array.indexOf(obj) !== -1; };
-	/** Given an array, and an item, if the item is found in the array, it removes it (in-place).  The same array is returned */
-	exports.removeFrom = hof_1.curry(function (array, obj) {
+            };
+            /** Given an array, returns true if the object is found in the array, (using indexOf) */
+            exports.inArray = function (array, obj) { return array.indexOf(obj) !== -1; };
+            /** Given an array, and an item, if the item is found in the array, it removes it (in-place).  The same array is returned */
+            exports.removeFrom = hof_1.curry(function (array, obj) {
 	    var idx = array.indexOf(obj);
 	    if (idx >= 0)
 	        array.splice(idx, 1);
 	    return array;
-	});
-	/**
+            });
+            /**
 	 * Applies a set of defaults to an options object.  The options object is filtered
 	 * to only those properties of the objects in the defaultsList.
 	 * Earlier objects in the defaultsList take precedence when applying defaults.
 	 */
-	function defaults(opts) {
+            function defaults(opts) {
 	    if (opts === void 0) { opts = {}; }
 	    var defaultsList = [];
 	    for (var _i = 1; _i < arguments.length; _i++) {
@@ -262,13 +262,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    var defaults = merge.apply(null, [{}].concat(defaultsList));
 	    return exports.extend({}, defaults, pick(opts || {}, Object.keys(defaults)));
-	}
-	exports.defaults = defaults;
-	/**
+            }
+            exports.defaults = defaults;
+            /**
 	 * Merges properties from the list of objects to the destination object.
 	 * If a property already exists in the destination object, then it is not overwritten.
 	 */
-	function merge(dst) {
+            function merge(dst) {
 	    var objs = [];
 	    for (var _i = 1; _i < arguments.length; _i++) {
 	        objs[_i - 1] = arguments[_i];
@@ -280,18 +280,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 	    });
 	    return dst;
-	}
-	exports.merge = merge;
-	/** Reduce function that merges each element of the list into a single object, using extend */
-	exports.mergeR = function (memo, item) { return exports.extend(memo, item); };
-	/**
+            }
+            exports.merge = merge;
+            /** Reduce function that merges each element of the list into a single object, using extend */
+            exports.mergeR = function (memo, item) { return exports.extend(memo, item); };
+            /**
 	 * Finds the common ancestor path between two states.
 	 *
 	 * @param {Object} first The first state.
 	 * @param {Object} second The second state.
 	 * @return {Array} Returns an array of state names in descending order, not including the root.
 	 */
-	function ancestors(first, second) {
+            function ancestors(first, second) {
 	    var path = [];
 	    for (var n in first.path) {
 	        if (first.path[n] !== second.path[n])
@@ -299,9 +299,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        path.push(first.path[n]);
 	    }
 	    return path;
-	}
-	exports.ancestors = ancestors;
-	/**
+            }
+            exports.ancestors = ancestors;
+            /**
 	 * Performs a non-strict comparison of the subset of two objects, defined by a list of keys.
 	 *
 	 * @param {Object} a The first object.
@@ -310,7 +310,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *                     it defaults to the list of keys in `a`.
 	 * @return {Boolean} Returns `true` if the keys match, otherwise `false`.
 	 */
-	function equalForKeys(a, b, keys) {
+            function equalForKeys(a, b, keys) {
 	    if (keys === void 0) { keys = Object.keys(a); }
 	    for (var i = 0; i < keys.length; i++) {
 	        var k = keys[i];
@@ -318,31 +318,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	            return false; // Not '===', values aren't necessarily normalized
 	    }
 	    return true;
-	}
-	exports.equalForKeys = equalForKeys;
-	function pickOmitImpl(predicate, obj) {
+            }
+            exports.equalForKeys = equalForKeys;
+            function pickOmitImpl(predicate, obj) {
 	    var objCopy = {}, keys = restArgs(arguments, 2);
 	    for (var key in obj) {
 	        if (predicate(keys, key))
 	            objCopy[key] = obj[key];
 	    }
 	    return objCopy;
-	}
-	/** Return a copy of the object only containing the whitelisted properties. */
-	function pick(obj) { return pickOmitImpl.apply(null, [exports.inArray].concat(restArgs(arguments))); }
-	exports.pick = pick;
-	/** Return a copy of the object omitting the blacklisted properties. */
-	function omit(obj) { return pickOmitImpl.apply(null, [hof_1.not(exports.inArray)].concat(restArgs(arguments))); }
-	exports.omit = omit;
-	/**
+            }
+            /** Return a copy of the object only containing the whitelisted properties. */
+            function pick(obj) { return pickOmitImpl.apply(null, [exports.inArray].concat(restArgs(arguments))); }
+            exports.pick = pick;
+            /** Return a copy of the object omitting the blacklisted properties. */
+            function omit(obj) { return pickOmitImpl.apply(null, [hof_1.not(exports.inArray)].concat(restArgs(arguments))); }
+            exports.omit = omit;
+            /**
 	 * Maps an array, or object to a property (by name)
 	 */
-	function pluck(collection, propName) {
+            function pluck(collection, propName) {
 	    return map(collection, hof_1.prop(propName));
-	}
-	exports.pluck = pluck;
-	/** Filters an Array or an Object's properties based on a predicate */
-	function filter(collection, callback) {
+            }
+            exports.pluck = pluck;
+            /** Filters an Array or an Object's properties based on a predicate */
+            function filter(collection, callback) {
 	    var arr = predicates_1.isArray(collection), result = arr ? [] : {};
 	    var accept = arr ? function (x) { return result.push(x); } : function (x, key) { return result[key] = x; };
 	    exports.forEach(collection, function (item, i) {
@@ -350,10 +350,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	            accept(item, i);
 	    });
 	    return result;
-	}
-	exports.filter = filter;
-	/** Finds an object from an array, or a property of an object, that matches a predicate */
-	function find(collection, callback) {
+            }
+            exports.filter = filter;
+            /** Finds an object from an array, or a property of an object, that matches a predicate */
+            function find(collection, callback) {
 	    var result;
 	    exports.forEach(collection, function (item, i) {
 	        if (result)
@@ -362,18 +362,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	            result = item;
 	    });
 	    return result;
-	}
-	exports.find = find;
-	/** Given an object, returns a new object, where each property is transformed by the callback function */
-	exports.mapObj = map;
-	/** Maps an array or object properties using a callback function */
-	function map(collection, callback) {
+            }
+            exports.find = find;
+            /** Given an object, returns a new object, where each property is transformed by the callback function */
+            exports.mapObj = map;
+            /** Maps an array or object properties using a callback function */
+            function map(collection, callback) {
 	    var result = predicates_1.isArray(collection) ? [] : {};
 	    exports.forEach(collection, function (item, i) { return result[i] = callback(item, i); });
 	    return result;
-	}
-	exports.map = map;
-	/**
+            }
+            exports.map = map;
+            /**
 	 * Given an object, return its enumerable property values
 	 *
 	 * @example
@@ -383,8 +383,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * let vals = values(foo); // [ 1, 2, 3 ]
 	 * ```
 	 */
-	exports.values = function (obj) { return Object.keys(obj).map(function (key) { return obj[key]; }); };
-	/**
+            exports.values = function (obj) { return Object.keys(obj).map(function (key) { return obj[key]; }); };
+            /**
 	 * Reduce function that returns true if all of the values are truthy.
 	 *
 	 * @example
@@ -397,8 +397,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * vals.reduce(allTrueR, true); // false
 	 * ```
 	 */
-	exports.allTrueR = function (memo, elem) { return memo && elem; };
-	/**
+            exports.allTrueR = function (memo, elem) { return memo && elem; };
+            /**
 	 * Reduce function that returns true if any of the values are truthy.
 	 *
 	 *  * @example
@@ -411,8 +411,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * vals.reduce(anyTrueR, true); // true
 	 * ```
 	 */
-	exports.anyTrueR = function (memo, elem) { return memo || elem; };
-	/**
+            exports.anyTrueR = function (memo, elem) { return memo || elem; };
+            /**
 	 * Reduce function which un-nests a single level of arrays
 	 * @example
 	 * ```
@@ -421,8 +421,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * input.reduce(unnestR, []) // [ "a", "b", "c", "d", [ "double, "nested" ] ]
 	 * ```
 	 */
-	exports.unnestR = function (memo, elem) { return memo.concat(elem); };
-	/**
+            exports.unnestR = function (memo, elem) { return memo.concat(elem); };
+            /**
 	 * Reduce function which recursively un-nests all arrays
 	 *
 	 * @example
@@ -432,13 +432,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * input.reduce(unnestR, []) // [ "a", "b", "c", "d", "double, "nested" ]
 	 * ```
 	 */
-	exports.flattenR = function (memo, elem) { return predicates_1.isArray(elem) ? memo.concat(elem.reduce(exports.flattenR, [])) : pushR(memo, elem); };
-	/** Reduce function that pushes an object to an array, then returns the array.  Mostly just for [[flattenR]] */
-	function pushR(arr, obj) { arr.push(obj); return arr; }
-	exports.pushR = pushR;
-	/** Reduce function that filters out duplicates */
-	exports.uniqR = function (acc, token) { return exports.inArray(acc, token) ? acc : pushR(acc, token); };
-	/**
+            exports.flattenR = function (memo, elem) { return predicates_1.isArray(elem) ? memo.concat(elem.reduce(exports.flattenR, [])) : pushR(memo, elem); };
+            /** Reduce function that pushes an object to an array, then returns the array.  Mostly just for [[flattenR]] */
+            function pushR(arr, obj) { arr.push(obj); return arr; }
+            exports.pushR = pushR;
+            /** Reduce function that filters out duplicates */
+            exports.uniqR = function (acc, token) { return exports.inArray(acc, token) ? acc : pushR(acc, token); };
+            /**
 	 * Return a new array with a single level of arrays unnested.
 	 *
 	 * @example
@@ -448,8 +448,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * unnest(input) // [ "a", "b", "c", "d", [ "double, "nested" ] ]
 	 * ```
 	 */
-	exports.unnest = function (arr) { return arr.reduce(exports.unnestR, []); };
-	/**
+            exports.unnest = function (arr) { return arr.reduce(exports.unnestR, []); };
+            /**
 	 * Return a completely flattened version of an array.
 	 *
 	 * @example
@@ -459,8 +459,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * flatten(input) // [ "a", "b", "c", "d", "double, "nested" ]
 	 * ```
 	 */
-	exports.flatten = function (arr) { return arr.reduce(exports.flattenR, []); };
-	/**
+            exports.flatten = function (arr) { return arr.reduce(exports.flattenR, []); };
+            /**
 	 * Given a .filter Predicate, builds a .filter Predicate which throws an error if any elements do not pass.
 	 * @example
 	 * ```
@@ -473,7 +473,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * oneString.filter(assertPredicate(isNumber, "Not all numbers")); // throws Error(""Not all numbers"");
 	 * ```
 	 */
-	function assertPredicate(predicate, errMsg) {
+            function assertPredicate(predicate, errMsg) {
 	    if (errMsg === void 0) { errMsg = "assert failure"; }
 	    return function (obj) {
 	        if (!predicate(obj)) {
@@ -481,9 +481,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	        return true;
 	    };
-	}
-	exports.assertPredicate = assertPredicate;
-	/**
+            }
+            exports.assertPredicate = assertPredicate;
+            /**
 	 * Like _.pairs: Given an object, returns an array of key/value pairs
 	 *
 	 * @example
@@ -492,8 +492,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * pairs({ foo: "FOO", bar: "BAR }) // [ [ "foo", "FOO" ], [ "bar": "BAR" ] ]
 	 * ```
 	 */
-	exports.pairs = function (object) { return Object.keys(object).map(function (key) { return [key, object[key]]; }); };
-	/**
+            exports.pairs = function (object) { return Object.keys(object).map(function (key) { return [key, object[key]]; }); };
+            /**
 	 * Given two or more parallel arrays, returns an array of tuples where
 	 * each tuple is composed of [ a[i], b[i], ... z[i] ]
 	 *
@@ -507,7 +507,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * arrayTuples(foo, bar, baz);  // [ [0, 1, 10], [2, 3, 30], [4, 5, 50], [6, 7, 70] ]
 	 * ```
 	 */
-	function arrayTuples() {
+            function arrayTuples() {
 	    var arrayArgs = [];
 	    for (var _i = 0; _i < arguments.length; _i++) {
 	        arrayArgs[_i - 0] = arguments[_i];
@@ -516,9 +516,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return [];
 	    var length = arrayArgs.reduce(function (min, arr) { return Math.min(arr.length, min); }, 9007199254740991); // aka 2^53 − 1 aka Number.MAX_SAFE_INTEGER
 	    return Array.apply(null, Array(length)).map(function (ignored, idx) { return arrayArgs.map(function (arr) { return arr[idx]; }); });
-	}
-	exports.arrayTuples = arrayTuples;
-	/**
+            }
+            exports.arrayTuples = arrayTuples;
+            /**
 	 * Reduce function which builds an object from an array of [key, value] pairs.
 	 *
 	 * Each iteration sets the key/val pair on the memo object, then returns the memo for the next iteration.
@@ -538,7 +538,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * // pairsToObj == { fookey: "fooval", barkey: "barval" }
 	 * ```
 	 */
-	function applyPairs(memo, keyValTuple) {
+            function applyPairs(memo, keyValTuple) {
 	    var key, value;
 	    if (predicates_1.isArray(keyValTuple))
 	        key = keyValTuple[0], value = keyValTuple[1];
@@ -546,36 +546,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	        throw new Error("invalid parameters to applyPairs");
 	    memo[key] = value;
 	    return memo;
-	}
-	exports.applyPairs = applyPairs;
-	/** Get the last element of an array */
-	function tail(arr) {
+            }
+            exports.applyPairs = applyPairs;
+            /** Get the last element of an array */
+            function tail(arr) {
 	    return arr.length && arr[arr.length - 1] || undefined;
-	}
-	exports.tail = tail;
-	/**
+            }
+            exports.tail = tail;
+            /**
 	 * shallow copy from src to dest
 	 *
 	 * note: This is a shallow copy, while angular.copy is a deep copy.
 	 * ui-router uses `copy` only to make copies of state parameters.
 	 */
-	function _copy(src, dest) {
+            function _copy(src, dest) {
 	    if (dest)
 	        Object.keys(dest).forEach(function (key) { return delete dest[key]; });
 	    if (!dest)
 	        dest = {};
 	    return exports.extend(dest, src);
-	}
-	function _forEach(obj, cb, _this) {
+            }
+            function _forEach(obj, cb, _this) {
 	    if (predicates_1.isArray(obj))
 	        return obj.forEach(cb, _this);
 	    Object.keys(obj).forEach(function (key) { return cb(obj[key], key); });
-	}
-	function _copyProps(to, from) { Object.keys(from).forEach(function (key) { return to[key] = from[key]; }); return to; }
-	function _extend(toObj, rest) {
+            }
+            function _copyProps(to, from) { Object.keys(from).forEach(function (key) { return to[key] = from[key]; }); return to; }
+            function _extend(toObj, rest) {
 	    return restArgs(arguments, 1).filter(exports.identity).reduce(_copyProps, toObj);
-	}
-	function _equals(o1, o2) {
+            }
+            function _equals(o1, o2) {
 	    if (o1 === o2)
 	        return true;
 	    if (o1 === null || o2 === null)
@@ -608,73 +608,73 @@ return /******/ (function(modules) { // webpackBootstrap
 	            return false;
 	    }
 	    return true;
-	}
-	function _arraysEq(a1, a2) {
+            }
+            function _arraysEq(a1, a2) {
 	    if (a1.length !== a2.length)
 	        return false;
 	    return arrayTuples(a1, a2).reduce(function (b, t) { return b && _equals(t[0], t[1]); }, true);
-	}
-	// issue #2676
-	exports.silenceUncaughtInPromise = function (promise) {
+            }
+            // issue #2676
+            exports.silenceUncaughtInPromise = function (promise) {
 	    return promise.catch(function (e) { return 0; }) && promise;
-	};
-	exports.silentRejection = function (error) {
+            };
+            exports.silentRejection = function (error) {
 	    return exports.silenceUncaughtInPromise(coreservices_1.services.$q.reject(error));
-	};
+            };
 
 
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 4 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** Predicates @module common_predicates */ /** */
-	var hof_1 = __webpack_require__(5);
-	var toStr = Object.prototype.toString;
-	var tis = function (t) { return function (x) { return typeof (x) === t; }; };
-	exports.isUndefined = tis('undefined');
-	exports.isDefined = hof_1.not(exports.isUndefined);
-	exports.isNull = function (o) { return o === null; };
-	exports.isFunction = tis('function');
-	exports.isNumber = tis('number');
-	exports.isString = tis('string');
-	exports.isObject = function (x) { return x !== null && typeof x === 'object'; };
-	exports.isArray = Array.isArray;
-	exports.isDate = (function (x) { return toStr.call(x) === '[object Date]'; });
-	exports.isRegExp = (function (x) { return toStr.call(x) === '[object RegExp]'; });
-	/**
+            "use strict";
+            /** Predicates @module common_predicates */ /** */
+            var hof_1 = __webpack_require__(5);
+            var toStr = Object.prototype.toString;
+            var tis = function (t) { return function (x) { return typeof (x) === t; }; };
+            exports.isUndefined = tis('undefined');
+            exports.isDefined = hof_1.not(exports.isUndefined);
+            exports.isNull = function (o) { return o === null; };
+            exports.isFunction = tis('function');
+            exports.isNumber = tis('number');
+            exports.isString = tis('string');
+            exports.isObject = function (x) { return x !== null && typeof x === 'object'; };
+            exports.isArray = Array.isArray;
+            exports.isDate = (function (x) { return toStr.call(x) === '[object Date]'; });
+            exports.isRegExp = (function (x) { return toStr.call(x) === '[object RegExp]'; });
+            /**
 	 * Predicate which checks if a value is injectable
 	 *
 	 * A value is "injectable" if it is a function, or if it is an ng1 array-notation-style array
 	 * where all the elements in the array are Strings, except the last one, which is a Function
 	 */
-	function isInjectable(val) {
+            function isInjectable(val) {
 	    if (exports.isArray(val) && val.length) {
 	        var head = val.slice(0, -1), tail = val.slice(-1);
 	        return !(head.filter(hof_1.not(exports.isString)).length || tail.filter(hof_1.not(exports.isFunction)).length);
 	    }
 	    return exports.isFunction(val);
-	}
-	exports.isInjectable = isInjectable;
-	/**
+            }
+            exports.isInjectable = isInjectable;
+            /**
 	 * Predicate which checks if a value looks like a Promise
 	 *
 	 * It is probably a Promise if it's an object, and it has a `then` property which is a Function
 	 */
-	exports.isPromise = hof_1.and(exports.isObject, hof_1.pipe(hof_1.prop('then'), exports.isFunction));
+            exports.isPromise = hof_1.and(exports.isObject, hof_1.pipe(hof_1.prop('then'), exports.isFunction));
 
 
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 5 */
+        /***/ function(module, exports) {
 
-	/**
+            /**
 	 * Higher order functions
 	 *
 	 * @module common_hof
 	 */ /** */
-	"use strict";
-	/**
+            "use strict";
+            /**
 	 * Returns a new function for [Partial Application](https://en.wikipedia.org/wiki/Partial_application) of the original function.
 	 *
 	 * Given a function with N parameters, returns a new function that supports partial application.
@@ -717,7 +717,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param fn
 	 * @returns {*|function(): (*|any)}
 	 */
-	function curry(fn) {
+            function curry(fn) {
 	    var initial_args = [].slice.apply(arguments, [1]);
 	    var func_args_length = fn.length;
 	    function curried(args) {
@@ -728,15 +728,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        };
 	    }
 	    return curried(initial_args);
-	}
-	exports.curry = curry;
-	/**
+            }
+            exports.curry = curry;
+            /**
 	 * Given a varargs list of functions, returns a function that composes the argument functions, right-to-left
 	 * given: f(x), g(x), h(x)
 	 * let composed = compose(f,g,h)
 	 * then, composed is: f(g(h(x)))
 	 */
-	function compose() {
+            function compose() {
 	    var args = arguments;
 	    var start = args.length - 1;
 	    return function () {
@@ -745,38 +745,38 @@ return /******/ (function(modules) { // webpackBootstrap
 	            result = args[i].call(this, result);
 	        return result;
 	    };
-	}
-	exports.compose = compose;
-	/**
+            }
+            exports.compose = compose;
+            /**
 	 * Given a varargs list of functions, returns a function that is composes the argument functions, left-to-right
 	 * given: f(x), g(x), h(x)
 	 * let piped = pipe(f,g,h);
 	 * then, piped is: h(g(f(x)))
 	 */
-	function pipe() {
+            function pipe() {
 	    var funcs = [];
 	    for (var _i = 0; _i < arguments.length; _i++) {
 	        funcs[_i - 0] = arguments[_i];
 	    }
 	    return compose.apply(null, [].slice.call(arguments).reverse());
-	}
-	exports.pipe = pipe;
-	/**
+            }
+            exports.pipe = pipe;
+            /**
 	 * Given a property name, returns a function that returns that property from an object
 	 * let obj = { foo: 1, name: "blarg" };
 	 * let getName = prop("name");
 	 * getName(obj) === "blarg"
 	 */
-	exports.prop = function (name) { return function (obj) { return obj && obj[name]; }; };
-	/**
+            exports.prop = function (name) { return function (obj) { return obj && obj[name]; }; };
+            /**
 	 * Given a property name and a value, returns a function that returns a boolean based on whether
 	 * the passed object has a property that matches the value
 	 * let obj = { foo: 1, name: "blarg" };
 	 * let getName = propEq("name", "blarg");
 	 * getName(obj) === true
 	 */
-	exports.propEq = curry(function (name, val, obj) { return obj && obj[name] === val; });
-	/**
+            exports.propEq = curry(function (name, val, obj) { return obj && obj[name] === val; });
+            /**
 	 * Given a dotted property name, returns a function that returns a nested property from an object, or undefined
 	 * let obj = { id: 1, nestedObj: { foo: 1, name: "blarg" }, };
 	 * let getName = prop("nestedObj.name");
@@ -784,23 +784,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * let propNotFound = prop("this.property.doesnt.exist");
 	 * propNotFound(obj) === undefined
 	 */
-	exports.parse = function (name) { return pipe.apply(null, name.split(".").map(exports.prop)); };
-	/**
+            exports.parse = function (name) { return pipe.apply(null, name.split(".").map(exports.prop)); };
+            /**
 	 * Given a function that returns a truthy or falsey value, returns a
 	 * function that returns the opposite (falsey or truthy) value given the same inputs
 	 */
-	exports.not = function (fn) { return function () {
+            exports.not = function (fn) { return function () {
 	    var args = [];
 	    for (var _i = 0; _i < arguments.length; _i++) {
 	        args[_i - 0] = arguments[_i];
 	    }
 	    return !fn.apply(null, args);
-	}; };
-	/**
+            }; };
+            /**
 	 * Given two functions that return truthy or falsey values, returns a function that returns truthy
 	 * if both functions return truthy for the given arguments
 	 */
-	function and(fn1, fn2) {
+            function and(fn1, fn2) {
 	    return function () {
 	        var args = [];
 	        for (var _i = 0; _i < arguments.length; _i++) {
@@ -808,13 +808,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	        return fn1.apply(null, args) && fn2.apply(null, args);
 	    };
-	}
-	exports.and = and;
-	/**
+            }
+            exports.and = and;
+            /**
 	 * Given two functions that return truthy or falsey values, returns a function that returns truthy
 	 * if at least one of the functions returns truthy for the given arguments
 	 */
-	function or(fn1, fn2) {
+            function or(fn1, fn2) {
 	    return function () {
 	        var args = [];
 	        for (var _i = 0; _i < arguments.length; _i++) {
@@ -822,28 +822,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	        return fn1.apply(null, args) || fn2.apply(null, args);
 	    };
-	}
-	exports.or = or;
-	/**
+            }
+            exports.or = or;
+            /**
 	 * Check if all the elements of an array match a predicate function
 	 *
 	 * @param fn1 a predicate function `fn1`
 	 * @returns a function which takes an array and returns true if `fn1` is true for all elements of the array
 	 */
-	exports.all = function (fn1) { return function (arr) { return arr.reduce(function (b, x) { return b && !!fn1(x); }, true); }; };
-	exports.any = function (fn1) { return function (arr) { return arr.reduce(function (b, x) { return b || !!fn1(x); }, false); }; };
-	exports.none = exports.not(exports.any);
-	/** Given a class, returns a Predicate function that returns true if the object is of that class */
-	exports.is = function (ctor) { return function (obj) { return (obj != null && obj.constructor === ctor || obj instanceof ctor); }; };
-	/** Given a value, returns a Predicate function that returns true if another value is === equal to the original value */
-	exports.eq = function (val) { return function (other) { return val === other; }; };
-	/** Given a value, returns a function which returns the value */
-	exports.val = function (v) { return function () { return v; }; };
-	function invoke(fnName, args) {
+            exports.all = function (fn1) { return function (arr) { return arr.reduce(function (b, x) { return b && !!fn1(x); }, true); }; };
+            exports.any = function (fn1) { return function (arr) { return arr.reduce(function (b, x) { return b || !!fn1(x); }, false); }; };
+            exports.none = exports.not(exports.any);
+            /** Given a class, returns a Predicate function that returns true if the object is of that class */
+            exports.is = function (ctor) { return function (obj) { return (obj != null && obj.constructor === ctor || obj instanceof ctor); }; };
+            /** Given a value, returns a Predicate function that returns true if another value is === equal to the original value */
+            exports.eq = function (val) { return function (other) { return val === other; }; };
+            /** Given a value, returns a function which returns the value */
+            exports.val = function (v) { return function () { return v; }; };
+            function invoke(fnName, args) {
 	    return function (obj) { return obj[fnName].apply(obj, args); };
-	}
-	exports.invoke = invoke;
-	/**
+            }
+            exports.invoke = invoke;
+            /**
 	 * Sorta like Pattern Matching (a functional programming conditional construct)
 	 *
 	 * See http://c2.com/cgi/wiki?PatternMatching
@@ -883,60 +883,60 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * with a Predicate and a mapping/output function
 	 * @returns {function(any): *}
 	 */
-	function pattern(struct) {
+            function pattern(struct) {
 	    return function (x) {
 	        for (var i = 0; i < struct.length; i++) {
 	            if (struct[i][0](x))
 	                return struct[i][1](x);
 	        }
 	    };
-	}
-	exports.pattern = pattern;
+            }
+            exports.pattern = pattern;
 
 
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 6 */
+        /***/ function(module, exports) {
 
-	/**
+            /**
 	 * This module is a stub for core services such as Dependency Injection or Browser Location.
 	 * Core services may be implemented by a specific framework, such as ng1 or ng2, or be pure javascript.
 	 *
 	 * @module common
 	 */
-	"use strict";
-	/** for typedoc */
-	//import {IQService} from "angular";
-	//import {IInjectorService} from "angular";
-	var notImplemented = function (fnname) { return function () {
+            "use strict";
+            /** for typedoc */
+            //import {IQService} from "angular";
+            //import {IInjectorService} from "angular";
+            var notImplemented = function (fnname) { return function () {
 	    throw new Error(fnname + "(): No coreservices implementation for UI-Router is loaded. You should include one of: ['angular1.js']");
-	}; };
-	var services = {
+            }; };
+            var services = {
 	    $q: undefined,
 	    $injector: undefined,
 	    location: {},
 	    locationConfig: {},
 	    template: {}
-	};
-	exports.services = services;
-	["replace", "url", "path", "search", "hash", "onChange"]
+            };
+            exports.services = services;
+            ["replace", "url", "path", "search", "hash", "onChange"]
 	    .forEach(function (key) { return services.location[key] = notImplemented(key); });
-	["port", "protocol", "host", "baseHref", "html5Mode", "hashPrefix"]
+            ["port", "protocol", "host", "baseHref", "html5Mode", "hashPrefix"]
 	    .forEach(function (key) { return services.locationConfig[key] = notImplemented(key); });
 
 
-/***/ },
-/* 7 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 7 */
+        /***/ function(module, exports) {
 
-	"use strict";
-	/** @module common */
-	/**
+            "use strict";
+            /** @module common */
+            /**
 	 * Matches state names using glob-like patterns.
 	 *
 	 * See: [[StateService.includes]]
 	 */
-	var Glob = (function () {
+            var Glob = (function () {
 	    function Glob(text) {
 	        this.text = text;
 	        this.glob = text.split('.');
@@ -971,17 +971,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return new Glob(text);
 	    };
 	    return Glob;
-	}());
-	exports.Glob = Glob;
+            }());
+            exports.Glob = Glob;
 
 
-/***/ },
-/* 8 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 8 */
+        /***/ function(module, exports) {
 
-	/** @module common */ /** for typedoc */
-	"use strict";
-	var Queue = (function () {
+            /** @module common */ /** for typedoc */
+            "use strict";
+            var Queue = (function () {
 	    function Queue(_items, _limit) {
 	        if (_items === void 0) { _items = []; }
 	        if (_limit === void 0) { _limit = null; }
@@ -1019,23 +1019,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	            return this._items[0];
 	    };
 	    return Queue;
-	}());
-	exports.Queue = Queue;
+            }());
+            exports.Queue = Queue;
 
 
-/***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 9 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module common_strings */ /** */
-	"use strict";
-	var predicates_1 = __webpack_require__(4);
-	var rejectFactory_1 = __webpack_require__(10);
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var transition_1 = __webpack_require__(11);
-	var resolvable_1 = __webpack_require__(19);
-	/**
+            /** @module common_strings */ /** */
+            "use strict";
+            var predicates_1 = __webpack_require__(4);
+            var rejectFactory_1 = __webpack_require__(10);
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var transition_1 = __webpack_require__(11);
+            var resolvable_1 = __webpack_require__(19);
+            /**
 	 * Returns a string shortened to a maximum length
 	 *
 	 * If the string is already less than the `max` length, return the string.
@@ -1044,13 +1044,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param max the maximum length of the string to return
 	 * @param str the input string
 	 */
-	function maxLength(max, str) {
+            function maxLength(max, str) {
 	    if (str.length <= max)
 	        return str;
 	    return str.substr(0, max - 3) + "...";
-	}
-	exports.maxLength = maxLength;
-	/**
+            }
+            exports.maxLength = maxLength;
+            /**
 	 * Returns a string, with spaces added to the end, up to a desired str length
 	 *
 	 * If the string is already longer than the desired length, return the string.
@@ -1059,40 +1059,40 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param length the desired length of the string to return
 	 * @param str the input string
 	 */
-	function padString(length, str) {
+            function padString(length, str) {
 	    while (str.length < length)
 	        str += " ";
 	    return str;
-	}
-	exports.padString = padString;
-	function kebobString(camelCase) {
+            }
+            exports.padString = padString;
+            function kebobString(camelCase) {
 	    return camelCase
 	        .replace(/^([A-Z])/, function ($1) { return $1.toLowerCase(); }) // replace first char
 	        .replace(/([A-Z])/g, function ($1) { return "-" + $1.toLowerCase(); }); // replace rest
-	}
-	exports.kebobString = kebobString;
-	function _toJson(obj) {
+            }
+            exports.kebobString = kebobString;
+            function _toJson(obj) {
 	    return JSON.stringify(obj);
-	}
-	function _fromJson(json) {
+            }
+            function _fromJson(json) {
 	    return predicates_1.isString(json) ? JSON.parse(json) : json;
-	}
-	function promiseToString(p) {
+            }
+            function promiseToString(p) {
 	    return "Promise(" + JSON.stringify(p) + ")";
-	}
-	function functionToString(fn) {
+            }
+            function functionToString(fn) {
 	    var fnStr = fnToString(fn);
 	    var namedFunctionMatch = fnStr.match(/^(function [^ ]+\([^)]*\))/);
 	    return namedFunctionMatch ? namedFunctionMatch[1] : fnStr;
-	}
-	exports.functionToString = functionToString;
-	function fnToString(fn) {
+            }
+            exports.functionToString = functionToString;
+            function fnToString(fn) {
 	    var _fn = predicates_1.isArray(fn) ? fn.slice(-1)[0] : fn;
 	    return _fn && _fn.toString() || "undefined";
-	}
-	exports.fnToString = fnToString;
-	var stringifyPatternFn = null;
-	var stringifyPattern = function (value) {
+            }
+            exports.fnToString = fnToString;
+            var stringifyPatternFn = null;
+            var stringifyPattern = function (value) {
 	    var isTransitionRejectionPromise = rejectFactory_1.Rejection.isTransitionRejectionPromise;
 	    stringifyPatternFn = stringifyPatternFn || hof_1.pattern([
 	        [hof_1.not(predicates_1.isDefined), hof_1.val("undefined")],
@@ -1106,8 +1106,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        [hof_1.val(true), common_1.identity]
 	    ]);
 	    return stringifyPatternFn(value);
-	};
-	function stringify(o) {
+            };
+            function stringify(o) {
 	    var seen = [];
 	    function format(val) {
 	        if (predicates_1.isObject(val)) {
@@ -1118,36 +1118,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return stringifyPattern(val);
 	    }
 	    return JSON.stringify(o, function (key, val) { return format(val); }).replace(/\\"/g, '"');
-	}
-	exports.stringify = stringify;
-	/** Returns a function that splits a string on a character or substring */
-	exports.beforeAfterSubstr = function (char) { return function (str) {
+            }
+            exports.stringify = stringify;
+            /** Returns a function that splits a string on a character or substring */
+            exports.beforeAfterSubstr = function (char) { return function (str) {
 	    if (!str)
 	        return ["", ""];
 	    var idx = str.indexOf(char);
 	    if (idx === -1)
 	        return [str, ""];
 	    return [str.substr(0, idx), str.substr(idx + 1)];
-	}; };
+            }; };
 
 
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 10 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module transition */ /** for typedoc */
-	"use strict";
-	var common_1 = __webpack_require__(3);
-	var strings_1 = __webpack_require__(9);
-	(function (RejectType) {
+            /** @module transition */ /** for typedoc */
+            "use strict";
+            var common_1 = __webpack_require__(3);
+            var strings_1 = __webpack_require__(9);
+            (function (RejectType) {
 	    RejectType[RejectType["SUPERSEDED"] = 2] = "SUPERSEDED";
 	    RejectType[RejectType["ABORTED"] = 3] = "ABORTED";
 	    RejectType[RejectType["INVALID"] = 4] = "INVALID";
 	    RejectType[RejectType["IGNORED"] = 5] = "IGNORED";
 	    RejectType[RejectType["ERROR"] = 6] = "ERROR";
-	})(exports.RejectType || (exports.RejectType = {}));
-	var RejectType = exports.RejectType;
-	var Rejection = (function () {
+            })(exports.RejectType || (exports.RejectType = {}));
+            var RejectType = exports.RejectType;
+            var Rejection = (function () {
 	    function Rejection(type, message, detail) {
 	        this.type = type;
 	        this.message = message;
@@ -1201,35 +1201,35 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return new Rejection(RejectType.ERROR, message, detail);
 	    };
 	    return Rejection;
-	}());
-	exports.Rejection = Rejection;
+            }());
+            exports.Rejection = Rejection;
 
 
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 11 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module transition */ /** for typedoc */
-	var trace_1 = __webpack_require__(12);
-	var coreservices_1 = __webpack_require__(6);
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var hof_1 = __webpack_require__(5);
-	var transitionHook_1 = __webpack_require__(13);
-	var hookRegistry_1 = __webpack_require__(15);
-	var hookBuilder_1 = __webpack_require__(16);
-	var node_1 = __webpack_require__(21);
-	var pathFactory_1 = __webpack_require__(20);
-	var targetState_1 = __webpack_require__(14);
-	var param_1 = __webpack_require__(22);
-	var resolvable_1 = __webpack_require__(19);
-	var rejectFactory_1 = __webpack_require__(10);
-	var resolveContext_1 = __webpack_require__(17);
-	var router_1 = __webpack_require__(26);
-	var transitionCount = 0;
-	var stateSelf = hof_1.prop("self");
-	/**
+            "use strict";
+            /** @module transition */ /** for typedoc */
+            var trace_1 = __webpack_require__(12);
+            var coreservices_1 = __webpack_require__(6);
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var hof_1 = __webpack_require__(5);
+            var transitionHook_1 = __webpack_require__(13);
+            var hookRegistry_1 = __webpack_require__(15);
+            var hookBuilder_1 = __webpack_require__(16);
+            var node_1 = __webpack_require__(21);
+            var pathFactory_1 = __webpack_require__(20);
+            var targetState_1 = __webpack_require__(14);
+            var param_1 = __webpack_require__(22);
+            var resolvable_1 = __webpack_require__(19);
+            var rejectFactory_1 = __webpack_require__(10);
+            var resolveContext_1 = __webpack_require__(17);
+            var router_1 = __webpack_require__(26);
+            var transitionCount = 0;
+            var stateSelf = hof_1.prop("self");
+            /**
 	 * Represents a transition between two states.
 	 *
 	 * When navigating to a state, we are transitioning **from** the current state **to** the new state.
@@ -1237,7 +1237,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * This object contains all contextual information about the to/from states, parameters, resolves.
 	 * It has information about all states being entered and exited as a result of the transition.
 	 */
-	var Transition = (function () {
+            var Transition = (function () {
 	    /**
 	     * Creates a new Transition object.
 	     *
@@ -1658,16 +1658,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    Transition.diToken = Transition;
 	    return Transition;
-	}());
-	exports.Transition = Transition;
+            }());
+            exports.Transition = Transition;
 
 
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 12 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/**
+            "use strict";
+            /**
 	 * UI-Router Transition Tracing
 	 *
 	 * Enable transition tracing to print transition information to the console, in order to help debug your application.
@@ -1698,27 +1698,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * @module trace
 	 */ /** for typedoc */
-	var hof_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(4);
-	var strings_1 = __webpack_require__(9);
-	/** @hidden */
-	function uiViewString(viewData) {
+            var hof_1 = __webpack_require__(5);
+            var predicates_1 = __webpack_require__(4);
+            var strings_1 = __webpack_require__(9);
+            /** @hidden */
+            function uiViewString(viewData) {
 	    if (!viewData)
 	        return 'ui-view (defunct)';
 	    return ("[ui-view#" + viewData.id + " tag ") +
 	        ("in template from '" + (viewData.creationContext && viewData.creationContext.name || '(root)') + "' state]: ") +
 	        ("fqn: '" + viewData.fqn + "', ") +
 	        ("name: '" + viewData.name + "@" + viewData.creationContext + "')");
-	}
-	/** @hidden */
-	var viewConfigString = function (viewConfig) {
+            }
+            /** @hidden */
+            var viewConfigString = function (viewConfig) {
 	    return ("[ViewConfig#" + viewConfig.$id + " from '" + (viewConfig.viewDecl.$context.name || '(root)') + "' state]: target ui-view: '" + viewConfig.viewDecl.$uiViewName + "@" + viewConfig.viewDecl.$uiViewContextAnchor + "'");
-	};
-	/** @hidden */
-	function normalizedCat(input) {
+            };
+            /** @hidden */
+            function normalizedCat(input) {
 	    return predicates_1.isNumber(input) ? Category[input] : Category[Category[input]];
-	}
-	/**
+            }
+            /**
 	 * Trace categories
 	 *
 	 * [[Trace.enable]] or [[Trace.disable]] a category
@@ -1731,19 +1731,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * `trace.enable(1)`
 	 */
-	(function (Category) {
+            (function (Category) {
 	    Category[Category["RESOLVE"] = 0] = "RESOLVE";
 	    Category[Category["TRANSITION"] = 1] = "TRANSITION";
 	    Category[Category["HOOK"] = 2] = "HOOK";
 	    Category[Category["INVOKE"] = 3] = "INVOKE";
 	    Category[Category["UIVIEW"] = 4] = "UIVIEW";
 	    Category[Category["VIEWCONFIG"] = 5] = "VIEWCONFIG";
-	})(exports.Category || (exports.Category = {}));
-	var Category = exports.Category;
-	/**
+            })(exports.Category || (exports.Category = {}));
+            var Category = exports.Category;
+            /**
 	 * Prints UI-Router Transition trace information to the console.
 	 */
-	var Trace = (function () {
+            var Trace = (function () {
 	    function Trace() {
 	        /** @hidden */
 	        this._enabled = {};
@@ -1899,9 +1899,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        console.log("VIEWCONFIG: " + event + " " + uiViewString(viewData));
 	    };
 	    return Trace;
-	}());
-	exports.Trace = Trace;
-	/**
+            }());
+            exports.Trace = Trace;
+            /**
 	 * The [[Trace]] singleton
 	 *
 	 * @example
@@ -1911,33 +1911,33 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * trace.enable(1, 5);
 	 * ```
 	 */
-	var trace = new Trace();
-	exports.trace = trace;
+            var trace = new Trace();
+            exports.trace = trace;
 
 
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 13 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var common_1 = __webpack_require__(3);
-	var strings_1 = __webpack_require__(9);
-	var predicates_1 = __webpack_require__(4);
-	var hof_1 = __webpack_require__(5);
-	var trace_1 = __webpack_require__(12);
-	var coreservices_1 = __webpack_require__(6);
-	var rejectFactory_1 = __webpack_require__(10);
-	var targetState_1 = __webpack_require__(14);
-	var defaultOptions = {
+            "use strict";
+            var common_1 = __webpack_require__(3);
+            var strings_1 = __webpack_require__(9);
+            var predicates_1 = __webpack_require__(4);
+            var hof_1 = __webpack_require__(5);
+            var trace_1 = __webpack_require__(12);
+            var coreservices_1 = __webpack_require__(6);
+            var rejectFactory_1 = __webpack_require__(10);
+            var targetState_1 = __webpack_require__(14);
+            var defaultOptions = {
 	    async: true,
 	    rejectIfSuperseded: true,
 	    current: common_1.noop,
 	    transition: null,
 	    traceData: {},
 	    bind: null
-	};
-	/** @hidden */
-	var TransitionHook = (function () {
+            };
+            /** @hidden */
+            var TransitionHook = (function () {
 	    function TransitionHook(transition, stateContext, hookFn, resolveContext, options) {
 	        var _this = this;
 	        this.transition = transition;
@@ -2016,17 +2016,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	            .reduce(function (chain, promise) { return chain.then(hof_1.val(promise)); }, coreservices_1.services.$q.when());
 	    };
 	    return TransitionHook;
-	}());
-	exports.TransitionHook = TransitionHook;
+            }());
+            exports.TransitionHook = TransitionHook;
 
 
-/***/ },
-/* 14 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 14 */
+        /***/ function(module, exports) {
 
-	/** @module state */ /** for typedoc */
-	"use strict";
-	/**
+            /** @module state */ /** for typedoc */
+            "use strict";
+            /**
 	 * @ngdoc object
 	 * @name ui.router.state.type:TargetState
 	 *
@@ -2040,7 +2040,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {ParamsOrArray} _params Parameters for the target state
 	 * @param {TransitionOptions} _options Transition options.
 	 */
-	var TargetState = (function () {
+            var TargetState = (function () {
 	    function TargetState(_identifier, _definition, _params, _options) {
 	        if (_params === void 0) { _params = {}; }
 	        if (_options === void 0) { _options = {}; }
@@ -2085,20 +2085,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	            return "State '" + this.name() + "' has an invalid definition";
 	    };
 	    return TargetState;
-	}());
-	exports.TargetState = TargetState;
+            }());
+            exports.TargetState = TargetState;
 
 
-/***/ },
-/* 15 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 15 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module transition */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var glob_1 = __webpack_require__(7);
-	/**
+            "use strict";
+            /** @module transition */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var glob_1 = __webpack_require__(7);
+            /**
 	 * Determines if the given state matches the matchCriteria
 	 *
 	 * @hidden
@@ -2111,7 +2111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * - If a function, matchState calls the function with the state and returns true if the function's result is truthy.
 	 * @returns {boolean}
 	 */
-	function matchState(state, criterion) {
+            function matchState(state, criterion) {
 	    var toMatch = predicates_1.isString(criterion) ? [criterion] : criterion;
 	    function matchGlobs(_state) {
 	        var globStrings = toMatch;
@@ -2125,10 +2125,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    var matchFn = (predicates_1.isFunction(toMatch) ? toMatch : matchGlobs);
 	    return !!matchFn(state);
-	}
-	exports.matchState = matchState;
-	/** @hidden */
-	var EventHook = (function () {
+            }
+            exports.matchState = matchState;
+            /** @hidden */
+            var EventHook = (function () {
 	    function EventHook(matchCriteria, callback, options) {
 	        if (options === void 0) { options = {}; }
 	        this.callback = callback;
@@ -2164,10 +2164,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return allMatched ? matches : null;
 	    };
 	    return EventHook;
-	}());
-	exports.EventHook = EventHook;
-	/** @hidden Return a registration function of the requested type. */
-	function makeHookRegistrationFn(hooks, name) {
+            }());
+            exports.EventHook = EventHook;
+            /** @hidden Return a registration function of the requested type. */
+            function makeHookRegistrationFn(hooks, name) {
 	    return function (matchObject, callback, options) {
 	        if (options === void 0) { options = {}; }
 	        var eventHook = new EventHook(matchObject, callback, options);
@@ -2176,8 +2176,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            common_1.removeFrom(hooks[name])(eventHook);
 	        };
 	    };
-	}
-	/**
+            }
+            /**
 	 * Mixin class acts as a Transition Hook registry.
 	 *
 	 * Holds the registered [[HookFn]] objects.
@@ -2192,7 +2192,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Since each [[Transition]] is itself a `HookRegistry`, hooks can also be added to individual Transitions
 	 * (note: the hook criteria still must match the Transition).
 	 */
-	var HookRegistry = (function () {
+            var HookRegistry = (function () {
 	    function HookRegistry() {
 	        var _this = this;
 	        this._transitionEvents = {
@@ -2220,21 +2220,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	        Object.keys(source._transitionEvents).concat(["getHooks"]).forEach(function (key) { return target[key] = source[key]; });
 	    };
 	    return HookRegistry;
-	}());
-	exports.HookRegistry = HookRegistry;
+            }());
+            exports.HookRegistry = HookRegistry;
 
 
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 16 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module transition */ /** for typedoc */
-	"use strict";
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var transitionHook_1 = __webpack_require__(13);
-	var resolveContext_1 = __webpack_require__(17);
-	/**
+            /** @module transition */ /** for typedoc */
+            "use strict";
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var transitionHook_1 = __webpack_require__(13);
+            var resolveContext_1 = __webpack_require__(17);
+            /**
 	 * This class returns applicable TransitionHooks for a specific Transition instance.
 	 *
 	 * Hooks (IEventHook) may be registered globally, e.g., $transitions.onEnter(...), or locally, e.g.
@@ -2248,7 +2248,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * in the Transition class, so we must also provide the Transition's _treeChanges)
 	 *
 	 */
-	var HookBuilder = (function () {
+            var HookBuilder = (function () {
 	    function HookBuilder($transitions, transition, baseHookOptions) {
 	        var _this = this;
 	        this.$transitions = $transitions;
@@ -2337,9 +2337,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            .filter(function (hook) { return hook.matches(treeChanges); }); // Only those satisfying matchCriteria
 	    };
 	    return HookBuilder;
-	}());
-	exports.HookBuilder = HookBuilder;
-	/**
+            }());
+            exports.HookBuilder = HookBuilder;
+            /**
 	 * A factory for a sort function for HookTuples.
 	 *
 	 * The sort function first compares the PathNode depth (how deep in the state tree a node is), then compares
@@ -2348,34 +2348,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param reverseDepthSort a boolean, when true, reverses the sort order for the node depth
 	 * @returns a tuple sort function
 	 */
-	function tupleSort(reverseDepthSort) {
+            function tupleSort(reverseDepthSort) {
 	    if (reverseDepthSort === void 0) { reverseDepthSort = false; }
 	    return function nodeDepthThenPriority(l, r) {
 	        var factor = reverseDepthSort ? -1 : 1;
 	        var depthDelta = (l.node.state.path.length - r.node.state.path.length) * factor;
 	        return depthDelta !== 0 ? depthDelta : r.hook.priority - l.hook.priority;
 	    };
-	}
+            }
 
 
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 17 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module resolve */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var trace_1 = __webpack_require__(12);
-	var coreservices_1 = __webpack_require__(6);
-	var interface_1 = __webpack_require__(18);
-	var resolvable_1 = __webpack_require__(19);
-	var pathFactory_1 = __webpack_require__(20);
-	var strings_1 = __webpack_require__(9);
-	var when = interface_1.resolvePolicies.when;
-	var ALL_WHENS = [when.EAGER, when.LAZY];
-	var EAGER_WHENS = [when.EAGER];
-	/**
+            "use strict";
+            /** @module resolve */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var trace_1 = __webpack_require__(12);
+            var coreservices_1 = __webpack_require__(6);
+            var interface_1 = __webpack_require__(18);
+            var resolvable_1 = __webpack_require__(19);
+            var pathFactory_1 = __webpack_require__(20);
+            var strings_1 = __webpack_require__(9);
+            var when = interface_1.resolvePolicies.when;
+            var ALL_WHENS = [when.EAGER, when.LAZY];
+            var EAGER_WHENS = [when.EAGER];
+            /**
 	 * Encapsulates Depenency Injection for a path of nodes
 	 *
 	 * UI-Router states are organized as a tree.
@@ -2385,7 +2385,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * The ResolveContext closes over the [[PathNode]]s, and provides DI for the last node in the path.
 	 */
-	var ResolveContext = (function () {
+            var ResolveContext = (function () {
 	    function ResolveContext(_path) {
 	        this._path = _path;
 	    }
@@ -2513,9 +2513,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return resolvable.deps.map(getDependency);
 	    };
 	    return ResolveContext;
-	}());
-	exports.ResolveContext = ResolveContext;
-	var UIInjectorImpl = (function () {
+            }());
+            exports.ResolveContext = ResolveContext;
+            var UIInjectorImpl = (function () {
 	    function UIInjectorImpl(context) {
 	        this.context = context;
 	        /** The native injector ($injector on ng1, Root Injector on ng2, justjs injector for everything else) */
@@ -2538,15 +2538,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return coreservices_1.services.$q.when(coreservices_1.services.$injector.get(token));
 	    };
 	    return UIInjectorImpl;
-	}());
+            }());
 
 
-/***/ },
-/* 18 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 18 */
+        /***/ function(module, exports) {
 
-	"use strict";
-	exports.resolvePolicies = {
+            "use strict";
+            exports.resolvePolicies = {
 	    when: {
 	        LAZY: "LAZY",
 	        EAGER: "EAGER"
@@ -2556,26 +2556,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	        NOWAIT: "NOWAIT",
 	        RXWAIT: "RXWAIT"
 	    }
-	};
+            };
 
 
-/***/ },
-/* 19 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 19 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module resolve */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var coreservices_1 = __webpack_require__(6);
-	var trace_1 = __webpack_require__(12);
-	var strings_1 = __webpack_require__(9);
-	var predicates_1 = __webpack_require__(4);
-	// TODO: explicitly make this user configurable
-	exports.defaultResolvePolicy = {
+            "use strict";
+            /** @module resolve */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var coreservices_1 = __webpack_require__(6);
+            var trace_1 = __webpack_require__(12);
+            var strings_1 = __webpack_require__(9);
+            var predicates_1 = __webpack_require__(4);
+            // TODO: explicitly make this user configurable
+            exports.defaultResolvePolicy = {
 	    when: "LAZY",
 	    async: "WAIT"
-	};
-	/**
+            };
+            /**
 	 * The basic building block for the resolve system.
 	 *
 	 * Resolvables encapsulate a state's resolve's resolveFn, the resolveFn's declared dependencies, the wrapped (.promise),
@@ -2587,7 +2587,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Resolvable.get() and Resolvable.resolve() both execute within a context path, which is passed as the first
 	 * parameter to those fns.
 	 */
-	var Resolvable = (function () {
+            var Resolvable = (function () {
 	    function Resolvable(arg1, resolveFn, deps, policy, data) {
 	        this.resolved = false;
 	        this.promise = undefined;
@@ -2686,24 +2686,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return new Resolvable(this);
 	    };
 	    return Resolvable;
-	}());
-	exports.Resolvable = Resolvable;
+            }());
+            exports.Resolvable = Resolvable;
 
 
-/***/ },
-/* 20 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 20 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module path */ /** for typedoc */
-	"use strict";
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var targetState_1 = __webpack_require__(14);
-	var node_1 = __webpack_require__(21);
-	/**
+            /** @module path */ /** for typedoc */
+            "use strict";
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var targetState_1 = __webpack_require__(14);
+            var node_1 = __webpack_require__(21);
+            /**
 	 * This class contains functions which convert TargetStates, Nodes and paths from one type to another.
 	 */
-	var PathFactory = (function () {
+            var PathFactory = (function () {
 	    function PathFactory() {
 	    }
 	    /** Given a PathNode[], create an TargetState */
@@ -2816,27 +2816,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	    /** Gets the raw parameter values from a path */
 	    PathFactory.paramValues = function (path) { return path.reduce(function (acc, node) { return common_1.extend(acc, node.paramValues); }, {}); };
 	    return PathFactory;
-	}());
-	exports.PathFactory = PathFactory;
+            }());
+            exports.PathFactory = PathFactory;
 
 
-/***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 21 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module path */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var param_1 = __webpack_require__(22);
-	/**
+            "use strict";
+            /** @module path */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var param_1 = __webpack_require__(22);
+            /**
 	 * A node in a [[TreeChanges]] path
 	 *
 	 * For a [[TreeChanges]] path, this class holds the stateful information for a single node in the path.
 	 * Each PathNode corresponds to a state being entered, exited, or retained.
 	 * The stateful information includes parameter values and resolve data.
 	 */
-	var PathNode = (function () {
+            var PathNode = (function () {
 	    function PathNode(state) {
 	        if (state instanceof PathNode) {
 	            var node = state;
@@ -2896,38 +2896,38 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return matching;
 	    };
 	    return PathNode;
-	}());
-	exports.PathNode = PathNode;
+            }());
+            exports.PathNode = PathNode;
 
 
-/***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 22 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module params */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(4);
-	var coreservices_1 = __webpack_require__(6);
-	var urlMatcherConfig_1 = __webpack_require__(23);
-	var type_1 = __webpack_require__(24);
-	var paramTypes_1 = __webpack_require__(25);
-	var hasOwn = Object.prototype.hasOwnProperty;
-	var isShorthand = function (cfg) { return ["value", "type", "squash", "array", "dynamic"].filter(hasOwn.bind(cfg || {})).length === 0; };
-	(function (DefType) {
+            "use strict";
+            /** @module params */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var predicates_1 = __webpack_require__(4);
+            var coreservices_1 = __webpack_require__(6);
+            var urlMatcherConfig_1 = __webpack_require__(23);
+            var type_1 = __webpack_require__(24);
+            var paramTypes_1 = __webpack_require__(25);
+            var hasOwn = Object.prototype.hasOwnProperty;
+            var isShorthand = function (cfg) { return ["value", "type", "squash", "array", "dynamic"].filter(hasOwn.bind(cfg || {})).length === 0; };
+            (function (DefType) {
 	    DefType[DefType["PATH"] = 0] = "PATH";
 	    DefType[DefType["SEARCH"] = 1] = "SEARCH";
 	    DefType[DefType["CONFIG"] = 2] = "CONFIG";
-	})(exports.DefType || (exports.DefType = {}));
-	var DefType = exports.DefType;
-	function unwrapShorthand(cfg) {
+            })(exports.DefType || (exports.DefType = {}));
+            var DefType = exports.DefType;
+            function unwrapShorthand(cfg) {
 	    cfg = isShorthand(cfg) && { value: cfg } || cfg;
 	    return common_1.extend(cfg, {
 	        $$fn: predicates_1.isInjectable(cfg.value) ? cfg.value : function () { return cfg.value; }
 	    });
-	}
-	function getType(cfg, urlType, location, id) {
+            }
+            function getType(cfg, urlType, location, id) {
 	    if (cfg.type && urlType && urlType.name !== 'string')
 	        throw new Error("Param '" + id + "' has two type configurations.");
 	    if (cfg.type && urlType && urlType.name === 'string' && paramTypes_1.paramTypes.type(cfg.type))
@@ -2937,11 +2937,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (!cfg.type)
 	        return (location === DefType.CONFIG ? paramTypes_1.paramTypes.type("any") : paramTypes_1.paramTypes.type("string"));
 	    return cfg.type instanceof type_1.ParamType ? cfg.type : paramTypes_1.paramTypes.type(cfg.type);
-	}
-	/**
+            }
+            /**
 	 * returns false, true, or the squash value to indicate the "default parameter url squash policy".
 	 */
-	function getSquashPolicy(config, isOptional) {
+            function getSquashPolicy(config, isOptional) {
 	    var squash = config.squash;
 	    if (!isOptional || squash === false)
 	        return false;
@@ -2950,8 +2950,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (squash === true || predicates_1.isString(squash))
 	        return squash;
 	    throw new Error("Invalid squash policy: '" + squash + "'. Valid policies: false, true, or arbitrary string");
-	}
-	function getReplace(config, arrayMode, isOptional, squash) {
+            }
+            function getReplace(config, arrayMode, isOptional, squash) {
 	    var replace, configuredKeys, defaultPolicy = [
 	        { from: "", to: (isOptional || arrayMode ? undefined : "") },
 	        { from: null, to: (isOptional || arrayMode ? undefined : "") }
@@ -2961,8 +2961,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        replace.push({ from: squash, to: undefined });
 	    configuredKeys = common_1.map(replace, hof_1.prop("from"));
 	    return common_1.filter(defaultPolicy, function (item) { return configuredKeys.indexOf(item.from) === -1; }).concat(replace);
-	}
-	var Param = (function () {
+            }
+            var Param = (function () {
 	    function Param(id, type, config, location) {
 	        config = unwrapShorthand(config);
 	        type = getType(config, type, location, id);
@@ -3077,18 +3077,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return params.map(function (param) { return param.validates(values[param.id]); }).reduce(common_1.allTrueR, true);
 	    };
 	    return Param;
-	}());
-	exports.Param = Param;
+            }());
+            exports.Param = Param;
 
 
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 23 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module url */ /** for typedoc */
-	var predicates_1 = __webpack_require__(4);
-	var MatcherConfig = (function () {
+            "use strict";
+            /** @module url */ /** for typedoc */
+            var predicates_1 = __webpack_require__(4);
+            var MatcherConfig = (function () {
 	    function MatcherConfig() {
 	        this._isCaseInsensitive = false;
 	        this._isStrictMode = true;
@@ -3106,24 +3106,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return this._defaultSquashPolicy = predicates_1.isDefined(value) ? value : this._defaultSquashPolicy;
 	    };
 	    return MatcherConfig;
-	}());
-	exports.MatcherConfig = MatcherConfig;
-	// TODO: Do not export global instance; create one in UIRouter() constructor
-	exports.matcherConfig = new MatcherConfig();
+            }());
+            exports.MatcherConfig = MatcherConfig;
+            // TODO: Do not export global instance; create one in UIRouter() constructor
+            exports.matcherConfig = new MatcherConfig();
 
 
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 24 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module params */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	/**
+            "use strict";
+            /** @module params */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            /**
 	 * Wraps up a `ParamType` object to handle array values.
 	 */
-	function ArrayType(type, mode) {
+            function ArrayType(type, mode) {
 	    var _this = this;
 	    // Wrap non-array value as array
 	    function arrayWrap(val) { return predicates_1.isArray(val) ? val : (predicates_1.isDefined(val) ? [val] : []); }
@@ -3168,8 +3168,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        is: arrayHandler(type.is.bind(type), true),
 	        $arrayMode: mode
 	    });
-	}
-	/**
+            }
+            /**
 	 * A class that implements Custom Parameter Type functionality.
 	 *
 	 * This class has naive implementations for all the [[ParamTypeDefinition]] methods.
@@ -3190,7 +3190,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * }
 	 * ```
 	 */
-	var ParamType = (function () {
+            var ParamType = (function () {
 	    /**
 	     * @param def  A configuration object which contains the custom type definition.  The object's
 	     *        properties will override the default methods and/or pattern in `ParamType`'s public interface.
@@ -3238,28 +3238,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return new ArrayType(this, mode);
 	    };
 	    return ParamType;
-	}());
-	exports.ParamType = ParamType;
+            }());
+            exports.ParamType = ParamType;
 
 
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 25 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module params */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var hof_1 = __webpack_require__(5);
-	var coreservices_1 = __webpack_require__(6);
-	var type_1 = __webpack_require__(24);
-	// Use tildes to pre-encode slashes.
-	// If the slashes are simply URLEncoded, the browser can choose to pre-decode them,
-	// and bidirectional encoding/decoding fails.
-	// Tilde was chosen because it's not a RFC 3986 section 2.2 Reserved Character
-	function valToString(val) { return val != null ? val.toString().replace(/~/g, "~~").replace(/\//g, "~2F") : val; }
-	function valFromString(val) { return val != null ? val.toString().replace(/~2F/g, "/").replace(/~~/g, "~") : val; }
-	var ParamTypes = (function () {
+            "use strict";
+            /** @module params */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var hof_1 = __webpack_require__(5);
+            var coreservices_1 = __webpack_require__(6);
+            var type_1 = __webpack_require__(24);
+            // Use tildes to pre-encode slashes.
+            // If the slashes are simply URLEncoded, the browser can choose to pre-decode them,
+            // and bidirectional encoding/decoding fails.
+            // Tilde was chosen because it's not a RFC 3986 section 2.2 Reserved Character
+            function valToString(val) { return val != null ? val.toString().replace(/~/g, "~~").replace(/\//g, "~2F") : val; }
+            function valFromString(val) { return val != null ? val.toString().replace(/~2F/g, "/").replace(/~~/g, "~") : val; }
+            var ParamTypes = (function () {
 	    function ParamTypes() {
 	        this.enqueue = true;
 	        this.typeQueue = [];
@@ -3351,27 +3351,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	    };
 	    return ParamTypes;
-	}());
-	exports.ParamTypes = ParamTypes;
-	exports.paramTypes = new ParamTypes();
+            }());
+            exports.ParamTypes = ParamTypes;
+            exports.paramTypes = new ParamTypes();
 
 
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 26 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module core */ /** */
-	var urlMatcherFactory_1 = __webpack_require__(27);
-	var urlRouter_1 = __webpack_require__(29);
-	var state_1 = __webpack_require__(30);
-	var urlRouter_2 = __webpack_require__(29);
-	var transitionService_1 = __webpack_require__(31);
-	var view_1 = __webpack_require__(37);
-	var stateRegistry_1 = __webpack_require__(38);
-	var stateService_1 = __webpack_require__(43);
-	var globals_1 = __webpack_require__(44);
-	/**
+            "use strict";
+            /** @module core */ /** */
+            var urlMatcherFactory_1 = __webpack_require__(27);
+            var urlRouter_1 = __webpack_require__(29);
+            var state_1 = __webpack_require__(30);
+            var urlRouter_2 = __webpack_require__(29);
+            var transitionService_1 = __webpack_require__(31);
+            var view_1 = __webpack_require__(37);
+            var stateRegistry_1 = __webpack_require__(38);
+            var stateService_1 = __webpack_require__(43);
+            var globals_1 = __webpack_require__(44);
+            /**
 	 * The master class used to instantiate an instance of UI-Router.
 	 *
 	 * This class instantiates and wires the global UI-Router services.
@@ -3380,7 +3380,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * your app states with the [[stateRegistry]] (and set url options using ...).  Then, tell UI-Router to monitor
 	 * the URL by calling `urlRouter.listen()` ([[URLRouter.listen]])
 	 */
-	var UIRouter = (function () {
+            var UIRouter = (function () {
 	    function UIRouter() {
 	        this.viewService = new view_1.ViewService();
 	        this.transitionService = new transitionService_1.TransitionService(this);
@@ -3397,36 +3397,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.globals.current = this.globals.$current.self;
 	    }
 	    return UIRouter;
-	}());
-	exports.UIRouter = UIRouter;
+            }());
+            exports.UIRouter = UIRouter;
 
 
-/***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 27 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module url */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var urlMatcher_1 = __webpack_require__(28);
-	var urlMatcherConfig_1 = __webpack_require__(23);
-	var param_1 = __webpack_require__(22);
-	var paramTypes_1 = __webpack_require__(25);
-	/** @hidden */
-	function getDefaultConfig() {
+            "use strict";
+            /** @module url */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var urlMatcher_1 = __webpack_require__(28);
+            var urlMatcherConfig_1 = __webpack_require__(23);
+            var param_1 = __webpack_require__(22);
+            var paramTypes_1 = __webpack_require__(25);
+            /** @hidden */
+            function getDefaultConfig() {
 	    return {
 	        strict: urlMatcherConfig_1.matcherConfig.strictMode(),
 	        caseInsensitive: urlMatcherConfig_1.matcherConfig.caseInsensitive()
 	    };
-	}
-	/**
+            }
+            /**
 	 * Factory for [[UrlMatcher]] instances.
 	 *
 	 * The factory is available to ng1 services as
 	 * `$urlMatcherFactor` or ng1 providers as `$urlMatcherFactoryProvider`.
 	 */
-	var UrlMatcherFactory = (function () {
+            var UrlMatcherFactory = (function () {
 	    function UrlMatcherFactory() {
 	        common_1.extend(this, { UrlMatcher: urlMatcher_1.UrlMatcher, Param: param_1.Param });
 	    }
@@ -3519,27 +3519,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    ;
 	    return UrlMatcherFactory;
-	}());
-	exports.UrlMatcherFactory = UrlMatcherFactory;
+            }());
+            exports.UrlMatcherFactory = UrlMatcherFactory;
 
 
-/***/ },
-/* 28 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 28 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module url */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(4);
-	var param_1 = __webpack_require__(22);
-	var paramTypes_1 = __webpack_require__(25);
-	var predicates_2 = __webpack_require__(4);
-	var param_2 = __webpack_require__(22);
-	var common_2 = __webpack_require__(3);
-	var common_3 = __webpack_require__(3);
-	/** @hidden */
-	function quoteRegExp(string, param) {
+            "use strict";
+            /** @module url */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var predicates_1 = __webpack_require__(4);
+            var param_1 = __webpack_require__(22);
+            var paramTypes_1 = __webpack_require__(25);
+            var predicates_2 = __webpack_require__(4);
+            var param_2 = __webpack_require__(22);
+            var common_2 = __webpack_require__(3);
+            var common_3 = __webpack_require__(3);
+            /** @hidden */
+            function quoteRegExp(string, param) {
 	    var surroundPattern = ['', ''], result = string.replace(/[\\\[\]\^$*+?.()|{}]/g, "\\$&");
 	    if (!param)
 	        return result;
@@ -3556,10 +3556,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	            break;
 	    }
 	    return result + surroundPattern[0] + param.type.pattern.source + surroundPattern[1];
-	}
-	/** @hidden */
-	var memoizeTo = function (obj, prop, fn) { return obj[prop] = obj[prop] || fn(); };
-	/**
+            }
+            /** @hidden */
+            var memoizeTo = function (obj, prop, fn) { return obj[prop] = obj[prop] || fn(); };
+            /**
 	 * Matches URLs against patterns.
 	 *
 	 * Matches URLs against patterns and extracts named parameters from the path or the search
@@ -3608,7 +3608,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *   in the built-in  `date` ParamType matches `2014-11-12`) and provides a Date object in $stateParams.start
 	 *
 	 */
-	var UrlMatcher = (function () {
+            var UrlMatcher = (function () {
 	    /**
 	     * @param pattern The pattern to compile into a matcher.
 	     * @param config  A configuration object hash
@@ -3952,41 +3952,41 @@ return /******/ (function(modules) { // webpackBootstrap
 	    /** @hidden */
 	    UrlMatcher.nameValidator = /^\w+([-.]+\w+)*(?:\[\])?$/;
 	    return UrlMatcher;
-	}());
-	exports.UrlMatcher = UrlMatcher;
+            }());
+            exports.UrlMatcher = UrlMatcher;
 
 
-/***/ },
-/* 29 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 29 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module url */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var coreservices_1 = __webpack_require__(6);
-	/** @hidden */
-	var $location = coreservices_1.services.location;
-	/** @hidden Returns a string that is a prefix of all strings matching the RegExp */
-	function regExpPrefix(re) {
+            "use strict";
+            /** @module url */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var coreservices_1 = __webpack_require__(6);
+            /** @hidden */
+            var $location = coreservices_1.services.location;
+            /** @hidden Returns a string that is a prefix of all strings matching the RegExp */
+            function regExpPrefix(re) {
 	    var prefix = /^\^((?:\\[^a-zA-Z0-9]|[^\\\[\]\^$*+?.()|{}]+)*)/.exec(re.source);
 	    return (prefix != null) ? prefix[1].replace(/\\(.)/g, "$1") : '';
-	}
-	/** @hidden Interpolates matched values into a String.replace()-style pattern */
-	function interpolate(pattern, match) {
+            }
+            /** @hidden Interpolates matched values into a String.replace()-style pattern */
+            function interpolate(pattern, match) {
 	    return pattern.replace(/\$(\$|\d{1,2})/, function (m, what) {
 	        return match[what === '$' ? 0 : Number(what)];
 	    });
-	}
-	/** @hidden */
-	function handleIfMatch($injector, $stateParams, handler, match) {
+            }
+            /** @hidden */
+            function handleIfMatch($injector, $stateParams, handler, match) {
 	    if (!match)
 	        return false;
 	    var result = $injector.invoke(handler, handler, { $match: match, $stateParams: $stateParams });
 	    return predicates_1.isDefined(result) ? result : true;
-	}
-	/** @hidden */
-	function appendBasePath(url, isHtml5, absolute) {
+            }
+            /** @hidden */
+            function appendBasePath(url, isHtml5, absolute) {
 	    var baseHref = coreservices_1.services.locationConfig.baseHref();
 	    if (baseHref === '/')
 	        return url;
@@ -3995,10 +3995,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (absolute)
 	        return baseHref.slice(1) + url;
 	    return url;
-	}
-	// TODO: Optimize groups of rules with non-empty prefix into some sort of decision tree
-	/** @hidden */
-	function update(rules, otherwiseFn, evt) {
+            }
+            // TODO: Optimize groups of rules with non-empty prefix into some sort of decision tree
+            /** @hidden */
+            function update(rules, otherwiseFn, evt) {
 	    if (evt && evt.defaultPrevented)
 	        return;
 	    function check(rule) {
@@ -4019,13 +4019,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // always check otherwise last to allow dynamic updates to the set of rules
 	    if (otherwiseFn)
 	        check(otherwiseFn);
-	}
-	/**
+            }
+            /**
 	 * Manages rules for client-side URL
 	 *
 	 * This class manages the router rules for what to do when the URL changes.
 	 */
-	var UrlRouterProvider = (function () {
+            var UrlRouterProvider = (function () {
 	    function UrlRouterProvider($urlMatcherFactory, $stateParams) {
 	        /** @hidden */
 	        this.rules = [];
@@ -4228,9 +4228,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    ;
 	    return UrlRouterProvider;
-	}());
-	exports.UrlRouterProvider = UrlRouterProvider;
-	var UrlRouter = (function () {
+            }());
+            exports.UrlRouterProvider = UrlRouterProvider;
+            var UrlRouter = (function () {
 	    /** @hidden */
 	    function UrlRouter(urlRouterProvider) {
 	        this.urlRouterProvider = urlRouterProvider;
@@ -4339,19 +4339,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return [cfg.protocol(), '://', cfg.host(), port, slash, url].join('');
 	    };
 	    return UrlRouter;
-	}());
-	exports.UrlRouter = UrlRouter;
+            }());
+            exports.UrlRouter = UrlRouter;
 
 
-/***/ },
-/* 30 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 30 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module state */ /** for typedoc */
-	var predicates_1 = __webpack_require__(4);
-	var common_1 = __webpack_require__(3);
-	/**
+            "use strict";
+            /** @module state */ /** for typedoc */
+            var predicates_1 = __webpack_require__(4);
+            var common_1 = __webpack_require__(3);
+            /**
 	 * @ngdoc object
 	 * @name ui.router.state.$stateProvider
 	 *
@@ -4372,7 +4372,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * The `$stateProvider` provides interfaces to declare these states for your app.
 	 */
-	var StateProvider = (function () {
+            var StateProvider = (function () {
 	    function StateProvider(stateRegistry) {
 	        this.stateRegistry = stateRegistry;
 	        this.invalidCallbacks = [];
@@ -4638,31 +4638,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.invalidCallbacks.push(callback);
 	    };
 	    return StateProvider;
-	}());
-	exports.StateProvider = StateProvider;
+            }());
+            exports.StateProvider = StateProvider;
 
 
-/***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 31 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var transition_1 = __webpack_require__(11);
-	var hookRegistry_1 = __webpack_require__(15);
-	var resolve_1 = __webpack_require__(32);
-	var views_1 = __webpack_require__(33);
-	var url_1 = __webpack_require__(34);
-	var redirectTo_1 = __webpack_require__(35);
-	var onEnterExitRetain_1 = __webpack_require__(36);
-	var hof_1 = __webpack_require__(5);
-	/**
+            "use strict";
+            var transition_1 = __webpack_require__(11);
+            var hookRegistry_1 = __webpack_require__(15);
+            var resolve_1 = __webpack_require__(32);
+            var views_1 = __webpack_require__(33);
+            var url_1 = __webpack_require__(34);
+            var redirectTo_1 = __webpack_require__(35);
+            var onEnterExitRetain_1 = __webpack_require__(36);
+            var hof_1 = __webpack_require__(5);
+            /**
 	 * The default [[Transition]] options.
 	 *
 	 * Include this object when applying custom defaults:
 	 * let reloadOpts = { reload: true, notify: true }
 	 * let options = defaults(theirOpts, customDefaults, defaultOptions);
 	 */
-	exports.defaultTransOpts = {
+            exports.defaultTransOpts = {
 	    location: true,
 	    relative: null,
 	    inherit: false,
@@ -4670,8 +4670,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    reload: false,
 	    custom: {},
 	    current: function () { return null; }
-	};
-	/**
+            };
+            /**
 	 * This class provides services related to Transitions.
 	 *
 	 * - Most importantly, it allows global Transition Hooks to be registered.
@@ -4680,7 +4680,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * At bootstrap, [[UIRouter]] creates a single instance (singleton) of this class.
 	 */
-	var TransitionService = (function () {
+            var TransitionService = (function () {
 	    function TransitionService(_router) {
 	        this._router = _router;
 	        this.$view = _router.viewService;
@@ -4744,19 +4744,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return new transition_1.Transition(fromPath, targetState, this._router);
 	    };
 	    return TransitionService;
-	}());
-	exports.TransitionService = TransitionService;
+            }());
+            exports.TransitionService = TransitionService;
 
 
-/***/ },
-/* 32 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 32 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module hooks */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var resolveContext_1 = __webpack_require__(17);
-	/**
+            "use strict";
+            /** @module hooks */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var resolveContext_1 = __webpack_require__(17);
+            /**
 	 * A [[TransitionHookFn]] which resolves all EAGER Resolvables in the To Path
 	 *
 	 * Registered using `transitionService.onStart({}, eagerResolvePath);`
@@ -4765,12 +4765,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * See [[StateDeclaration.resolve]]
 	 */
-	exports.eagerResolvePath = function (trans) {
+            exports.eagerResolvePath = function (trans) {
 	    return new resolveContext_1.ResolveContext(trans.treeChanges().to)
 	        .resolvePath("EAGER", trans)
 	        .then(common_1.noop);
-	};
-	/**
+            };
+            /**
 	 * A [[TransitionHookFn]] which resolves all LAZY Resolvables for the state (and all its ancestors) in the To Path
 	 *
 	 * Registered using `transitionService.onEnter({ entering: () => true }, lazyResolveState);`
@@ -4779,23 +4779,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * See [[StateDeclaration.resolve]]
 	 */
-	exports.lazyResolveState = function (trans, state) {
+            exports.lazyResolveState = function (trans, state) {
 	    return new resolveContext_1.ResolveContext(trans.treeChanges().to)
 	        .subContext(state)
 	        .resolvePath("LAZY", trans)
 	        .then(common_1.noop);
-	};
+            };
 
 
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 33 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module hooks */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var coreservices_1 = __webpack_require__(6);
-	/**
+            "use strict";
+            /** @module hooks */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var coreservices_1 = __webpack_require__(6);
+            /**
 	 * A [[TransitionHookFn]] which waits for the views to load
 	 *
 	 * Registered using `transitionService.onStart({}, loadEnteringViews);`
@@ -4803,14 +4803,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Allows the views to do async work in [[ViewConfig.load]] before the transition continues.
 	 * In angular 1, this includes loading the templates.
 	 */
-	function loadEnteringViews(transition) {
+            function loadEnteringViews(transition) {
 	    var enteringViews = transition.views("entering");
 	    if (!enteringViews.length)
 	        return;
 	    return coreservices_1.services.$q.all(enteringViews.map(function (view) { return view.load(); })).then(common_1.noop);
-	}
-	exports.loadEnteringViews = loadEnteringViews;
-	/**
+            }
+            exports.loadEnteringViews = loadEnteringViews;
+            /**
 	 * A [[TransitionHookFn]] which activates the new views when a transition is successful.
 	 *
 	 * Registered using `transitionService.onSuccess({}, activateViews);`
@@ -4820,7 +4820,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * See [[ViewService]]
 	 */
-	function activateViews(transition) {
+            function activateViews(transition) {
 	    var enteringViews = transition.views("entering");
 	    var exitingViews = transition.views("exiting");
 	    if (!enteringViews.length && !exitingViews.length)
@@ -4829,21 +4829,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	    exitingViews.forEach(function (vc) { return $view.deactivateViewConfig(vc); });
 	    enteringViews.forEach(function (vc) { return $view.activateViewConfig(vc); });
 	    $view.sync();
-	}
-	exports.activateViews = activateViews;
+            }
+            exports.activateViews = activateViews;
 
 
-/***/ },
-/* 34 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 34 */
+        /***/ function(module, exports) {
 
-	"use strict";
-	/**
+            "use strict";
+            /**
 	 * A [[TransitionHookFn]] which updates the URL after a successful transition
 	 *
 	 * Registered using `transitionService.onSuccess({}, updateUrl);`
 	 */
-	function updateUrl(transition) {
+            function updateUrl(transition) {
 	    var options = transition.options();
 	    var $state = transition.router.stateService;
 	    var $urlRouter = transition.router.urlRouter;
@@ -4852,27 +4852,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	        $urlRouter.push($state.$current.navigable.url, $state.params, urlOptions);
 	    }
 	    $urlRouter.update(true);
-	}
-	exports.updateUrl = updateUrl;
+            }
+            exports.updateUrl = updateUrl;
 
 
-/***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 35 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module hooks */ /** */
-	var predicates_1 = __webpack_require__(4);
-	var coreservices_1 = __webpack_require__(6);
-	var targetState_1 = __webpack_require__(14);
-	/**
+            "use strict";
+            /** @module hooks */ /** */
+            var predicates_1 = __webpack_require__(4);
+            var coreservices_1 = __webpack_require__(6);
+            var targetState_1 = __webpack_require__(14);
+            /**
 	 * A [[TransitionHookFn]] that redirects to a different state or params
 	 *
 	 * Registered using `transitionService.onStart({ to: (state) => !!state.redirectTo }, redirectHook);`
 	 *
 	 * See [[StateDeclaration.redirectTo]]
 	 */
-	exports.redirectToHook = function (trans) {
+            exports.redirectToHook = function (trans) {
 	    var redirect = trans.to().redirectTo;
 	    if (!redirect)
 	        return;
@@ -4889,15 +4889,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return coreservices_1.services.$q.when(redirect(trans)).then(handleResult);
 	    }
 	    return handleResult(redirect);
-	};
+            };
 
 
-/***/ },
-/* 36 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 36 */
+        /***/ function(module, exports) {
 
-	"use strict";
-	/**
+            "use strict";
+            /**
 	 * A factory which creates an onEnter, onExit or onRetain transition hook function
 	 *
 	 * The returned function invokes the (for instance) state.onEnter hook when the
@@ -4905,58 +4905,58 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * @hidden
 	 */
-	function makeEnterExitRetainHook(hookName) {
+            function makeEnterExitRetainHook(hookName) {
 	    return function (transition, state) {
 	        return state[hookName](transition, state);
 	    };
-	}
-	/**
+            }
+            /**
 	 * The [[TransitionStateHookFn]] for onExit
 	 *
 	 * When the state is being exited, the state's .onExit function is invoked.
 	 *
 	 * Registered using `transitionService.onExit({ exiting: (state) => !!state.onExit }, onExitHook);`
 	 */
-	exports.onExitHook = makeEnterExitRetainHook('onExit');
-	/**
+            exports.onExitHook = makeEnterExitRetainHook('onExit');
+            /**
 	 * The [[TransitionStateHookFn]] for onRetain
 	 *
 	 * When the state is being exited, the state's .onRetain function is invoked.
 	 *
 	 * Registered using `transitionService.onRetain({ retained: (state) => !!state.onRetain }, onRetainHook);`
 	 */
-	exports.onRetainHook = makeEnterExitRetainHook('onRetain');
-	/**
+            exports.onRetainHook = makeEnterExitRetainHook('onRetain');
+            /**
 	 * The [[TransitionStateHookFn]] for onEnter
 	 *
 	 * When the state is being exited, the state's .onEnter function is invoked.
 	 *
 	 * Registered using `transitionService.onEnter({ entering: (state) => !!state.onEnter }, onEnterHook);`
 	 */
-	exports.onEnterHook = makeEnterExitRetainHook('onEnter');
+            exports.onEnterHook = makeEnterExitRetainHook('onEnter');
 
 
-/***/ },
-/* 37 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 37 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module view */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(4);
-	var trace_1 = __webpack_require__(12);
-	var match = function (obj1) {
+            "use strict";
+            /** @module view */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var predicates_1 = __webpack_require__(4);
+            var trace_1 = __webpack_require__(12);
+            var match = function (obj1) {
 	    var keys = [];
 	    for (var _i = 1; _i < arguments.length; _i++) {
 	        keys[_i - 1] = arguments[_i];
 	    }
 	    return function (obj2) { return keys.reduce(function (memo, key) { return memo && obj1[key] === obj2[key]; }, true); };
-	};
-	/**
+            };
+            /**
 	 * The View service
 	 */
-	var ViewService = (function () {
+            var ViewService = (function () {
 	    function ViewService() {
 	        var _this = this;
 	        this.uiViews = [];
@@ -5177,20 +5177,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return { uiViewName: uiViewName, uiViewContextAnchor: uiViewContextAnchor };
 	    };
 	    return ViewService;
-	}());
-	exports.ViewService = ViewService;
+            }());
+            exports.ViewService = ViewService;
 
 
-/***/ },
-/* 38 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 38 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module state */ /** for typedoc */
-	"use strict";
-	var stateMatcher_1 = __webpack_require__(39);
-	var stateBuilder_1 = __webpack_require__(40);
-	var stateQueueManager_1 = __webpack_require__(41);
-	var StateRegistry = (function () {
+            /** @module state */ /** for typedoc */
+            "use strict";
+            var stateMatcher_1 = __webpack_require__(39);
+            var stateBuilder_1 = __webpack_require__(40);
+            var stateQueueManager_1 = __webpack_require__(41);
+            var StateRegistry = (function () {
 	    function StateRegistry(urlMatcherFactory, urlRouterProvider) {
 	        this.states = {};
 	        this.matcher = new stateMatcher_1.StateMatcher(this.states);
@@ -5225,18 +5225,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return this.builder.builder(name, func);
 	    };
 	    return StateRegistry;
-	}());
-	exports.StateRegistry = StateRegistry;
+            }());
+            exports.StateRegistry = StateRegistry;
 
 
-/***/ },
-/* 39 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 39 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module state */ /** for typedoc */
-	var predicates_1 = __webpack_require__(4);
-	var StateMatcher = (function () {
+            "use strict";
+            /** @module state */ /** for typedoc */
+            var predicates_1 = __webpack_require__(4);
+            var StateMatcher = (function () {
 	    function StateMatcher(_states) {
 	        this._states = _states;
 	    }
@@ -5279,40 +5279,40 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return current.name + (current.name && relName ? "." : "") + relName;
 	    };
 	    return StateMatcher;
-	}());
-	exports.StateMatcher = StateMatcher;
+            }());
+            exports.StateMatcher = StateMatcher;
 
 
-/***/ },
-/* 40 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 40 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module state */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var strings_1 = __webpack_require__(9);
-	var hof_1 = __webpack_require__(5);
-	var param_1 = __webpack_require__(22);
-	var resolvable_1 = __webpack_require__(19);
-	var coreservices_1 = __webpack_require__(6);
-	var parseUrl = function (url) {
+            "use strict";
+            /** @module state */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var strings_1 = __webpack_require__(9);
+            var hof_1 = __webpack_require__(5);
+            var param_1 = __webpack_require__(22);
+            var resolvable_1 = __webpack_require__(19);
+            var coreservices_1 = __webpack_require__(6);
+            var parseUrl = function (url) {
 	    if (!predicates_1.isString(url))
 	        return false;
 	    var root = url.charAt(0) === '^';
 	    return { val: root ? url.substring(1) : url, root: root };
-	};
-	function selfBuilder(state) {
+            };
+            function selfBuilder(state) {
 	    state.self.$$state = function () { return state; };
 	    return state.self;
-	}
-	function dataBuilder(state) {
+            }
+            function dataBuilder(state) {
 	    if (state.parent && state.parent.data) {
 	        state.data = state.self.data = common_1.inherit(state.parent.data, state.data);
 	    }
 	    return state.data;
-	}
-	var getUrlBuilder = function ($urlMatcherFactoryProvider, root) {
+            }
+            var getUrlBuilder = function ($urlMatcherFactoryProvider, root) {
 	    return function urlBuilder(state) {
 	        var stateDec = state;
 	        var parsed = parseUrl(stateDec.url), parent = state.parent;
@@ -5330,27 +5330,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	            throw new Error("Invalid url '" + url + "' in state '" + state + "'");
 	        return (parsed && parsed.root) ? url : ((parent && parent.navigable) || root()).url.append(url);
 	    };
-	};
-	var getNavigableBuilder = function (isRoot) {
+            };
+            var getNavigableBuilder = function (isRoot) {
 	    return function navigableBuilder(state) {
 	        return !isRoot(state) && state.url ? state : (state.parent ? state.parent.navigable : null);
 	    };
-	};
-	function paramsBuilder(state) {
+            };
+            function paramsBuilder(state) {
 	    var makeConfigParam = function (config, id) { return param_1.Param.fromConfig(id, null, config); };
 	    var urlParams = (state.url && state.url.parameters({ inherit: false })) || [];
 	    var nonUrlParams = common_1.values(common_1.map(common_1.omit(state.params || {}, urlParams.map(hof_1.prop('id'))), makeConfigParam));
 	    return urlParams.concat(nonUrlParams).map(function (p) { return [p.id, p]; }).reduce(common_1.applyPairs, {});
-	}
-	function pathBuilder(state) {
+            }
+            function pathBuilder(state) {
 	    return state.parent ? state.parent.path.concat(state) : [state];
-	}
-	function includesBuilder(state) {
+            }
+            function includesBuilder(state) {
 	    var includes = state.parent ? common_1.extend({}, state.parent.includes) : {};
 	    includes[state.name] = true;
 	    return includes;
-	}
-	/**
+            }
+            /**
 	 * This is a [[StateBuilder.builder]] function for the `resolve:` block on a [[StateDeclaration]].
 	 *
 	 * When the [[StateBuilder]] builds a [[State]] object from a raw [[StateDeclaration]], this builder
@@ -5391,7 +5391,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *   { provide: "myBazResolve", useFactory: function(dep) { dep.fetchSomethingAsPromise() }, deps: [ "DependencyName" ] }
 	 * ]
 	 */
-	function resolvablesBuilder(state) {
+            function resolvablesBuilder(state) {
 	    /** convert a resolve: {} object to an array of tuples */
 	    var obj2Tuples = function (obj) { return Object.keys(obj || {}).map(function (token) { return ({ token: token, val: obj[token], deps: undefined }); }); };
 	    /** fetch DI annotations from a function or ng1-style array */
@@ -5429,9 +5429,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var decl = state.resolve;
 	    var items = predicates_1.isArray(decl) ? decl : obj2Tuples(decl);
 	    return items.map(item2Resolvable);
-	}
-	exports.resolvablesBuilder = resolvablesBuilder;
-	/**
+            }
+            exports.resolvablesBuilder = resolvablesBuilder;
+            /**
 	 * @internalapi A internal global service
 	 *
 	 * StateBuilder is a factory for the internal [[State]] objects.
@@ -5443,7 +5443,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Custom properties or API may be added to the internal [[State]] object by registering a decorator function
 	 * using the [[builder]] method.
 	 */
-	var StateBuilder = (function () {
+            var StateBuilder = (function () {
 	    function StateBuilder(matcher, $urlMatcherFactoryProvider) {
 	        this.matcher = matcher;
 	        var self = this;
@@ -5531,20 +5531,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return parentName ? parentName + "." + name : name;
 	    };
 	    return StateBuilder;
-	}());
-	exports.StateBuilder = StateBuilder;
+            }());
+            exports.StateBuilder = StateBuilder;
 
 
-/***/ },
-/* 41 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 41 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module state */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var stateObject_1 = __webpack_require__(42);
-	var StateQueueManager = (function () {
+            "use strict";
+            /** @module state */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var stateObject_1 = __webpack_require__(42);
+            var StateQueueManager = (function () {
 	    function StateQueueManager(states, builder, $urlRouterProvider) {
 	        this.states = states;
 	        this.builder = builder;
@@ -5615,19 +5615,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }]);
 	    };
 	    return StateQueueManager;
-	}());
-	exports.StateQueueManager = StateQueueManager;
+            }());
+            exports.StateQueueManager = StateQueueManager;
 
 
-/***/ },
-/* 42 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 42 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module state */ /** for typedoc */
-	"use strict";
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	/**
+            /** @module state */ /** for typedoc */
+            "use strict";
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            /**
 	 * @ngdoc object
 	 * @name ui.router.state.type:State
 	 *
@@ -5639,7 +5639,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * @returns {Object}  Returns a new `State` object.
 	 */
-	var State = (function () {
+            var State = (function () {
 	    function State(config) {
 	        common_1.extend(this, config);
 	        // Object.freeze(this);
@@ -5705,30 +5705,30 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return this.fqn();
 	    };
 	    return State;
-	}());
-	exports.State = State;
+            }());
+            exports.State = State;
 
 
-/***/ },
-/* 43 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 43 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module state */ /** */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var queue_1 = __webpack_require__(8);
-	var coreservices_1 = __webpack_require__(6);
-	var pathFactory_1 = __webpack_require__(20);
-	var node_1 = __webpack_require__(21);
-	var transitionService_1 = __webpack_require__(31);
-	var rejectFactory_1 = __webpack_require__(10);
-	var targetState_1 = __webpack_require__(14);
-	var param_1 = __webpack_require__(22);
-	var glob_1 = __webpack_require__(7);
-	var common_2 = __webpack_require__(3);
-	var common_3 = __webpack_require__(3);
-	var StateService = (function () {
+            "use strict";
+            /** @module state */ /** */
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var queue_1 = __webpack_require__(8);
+            var coreservices_1 = __webpack_require__(6);
+            var pathFactory_1 = __webpack_require__(20);
+            var node_1 = __webpack_require__(21);
+            var transitionService_1 = __webpack_require__(31);
+            var rejectFactory_1 = __webpack_require__(10);
+            var targetState_1 = __webpack_require__(14);
+            var param_1 = __webpack_require__(22);
+            var glob_1 = __webpack_require__(7);
+            var common_2 = __webpack_require__(3);
+            var common_3 = __webpack_require__(3);
+            var StateService = (function () {
 	    /** @hidden */
 	    function StateService(router) {
 	        this.router = router;
@@ -6230,23 +6230,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return reg.get(stateOrName, base || this.$current);
 	    };
 	    return StateService;
-	}());
-	exports.StateService = StateService;
+            }());
+            exports.StateService = StateService;
 
 
-/***/ },
-/* 44 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 44 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module core */ /** */
-	var stateParams_1 = __webpack_require__(45);
-	var queue_1 = __webpack_require__(8);
-	var common_1 = __webpack_require__(3);
-	/**
+            "use strict";
+            /** @module core */ /** */
+            var stateParams_1 = __webpack_require__(45);
+            var queue_1 = __webpack_require__(8);
+            var common_1 = __webpack_require__(3);
+            /**
 	 * Global mutable state
 	 */
-	var Globals = (function () {
+            var Globals = (function () {
 	    function Globals(transitionService) {
 	        var _this = this;
 	        this.params = new stateParams_1.StateParams();
@@ -6269,18 +6269,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	        transitionService.onBefore({}, beforeNewTransition);
 	    }
 	    return Globals;
-	}());
-	exports.Globals = Globals;
+            }());
+            exports.Globals = Globals;
 
 
-/***/ },
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 45 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module params */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var StateParams = (function () {
+            "use strict";
+            /** @module params */ /** for typedoc */
+            var common_1 = __webpack_require__(3);
+            var StateParams = (function () {
 	    function StateParams(params) {
 	        if (params === void 0) { params = {}; }
 	        common_1.extend(this, params);
@@ -6312,87 +6312,87 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    ;
 	    return StateParams;
-	}());
-	exports.StateParams = StateParams;
+            }());
+            exports.StateParams = StateParams;
 
 
-/***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 46 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/**
+            }
+            /**
 	 * This module contains code for State Parameters.
 	 *
 	 * See [[ParamDeclaration]]
 	 * @module params
 	 * @preferred doc
 	 */
-	/** for typedoc */
-	__export(__webpack_require__(22));
-	__export(__webpack_require__(25));
-	__export(__webpack_require__(45));
-	__export(__webpack_require__(24));
+            /** for typedoc */
+            __export(__webpack_require__(22));
+            __export(__webpack_require__(25));
+            __export(__webpack_require__(45));
+            __export(__webpack_require__(24));
 
 
-/***/ },
-/* 47 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 47 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module path */ /** for typedoc */
-	__export(__webpack_require__(21));
-	__export(__webpack_require__(20));
+            }
+            /** @module path */ /** for typedoc */
+            __export(__webpack_require__(21));
+            __export(__webpack_require__(20));
 
 
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 48 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module resolve */ /** for typedoc */
-	__export(__webpack_require__(18));
-	__export(__webpack_require__(19));
-	__export(__webpack_require__(17));
+            }
+            /** @module resolve */ /** for typedoc */
+            __export(__webpack_require__(18));
+            __export(__webpack_require__(19));
+            __export(__webpack_require__(17));
 
 
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 49 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module state */ /** for typedoc */
-	__export(__webpack_require__(30));
-	__export(__webpack_require__(40));
-	__export(__webpack_require__(42));
-	__export(__webpack_require__(39));
-	__export(__webpack_require__(41));
-	__export(__webpack_require__(38));
-	__export(__webpack_require__(43));
-	__export(__webpack_require__(14));
+            }
+            /** @module state */ /** for typedoc */
+            __export(__webpack_require__(30));
+            __export(__webpack_require__(40));
+            __export(__webpack_require__(42));
+            __export(__webpack_require__(39));
+            __export(__webpack_require__(41));
+            __export(__webpack_require__(38));
+            __export(__webpack_require__(43));
+            __export(__webpack_require__(14));
 
 
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 50 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/**
+            }
+            /**
 	 * This module contains APIs related to a Transition.
 	 *
 	 * See [[Transition]], [[$transitions]]
@@ -6400,47 +6400,47 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @module transition
 	 * @preferred
 	 */
-	/** for typedoc */
-	__export(__webpack_require__(16));
-	__export(__webpack_require__(15));
-	__export(__webpack_require__(10));
-	__export(__webpack_require__(11));
-	__export(__webpack_require__(13));
-	__export(__webpack_require__(31));
+            /** for typedoc */
+            __export(__webpack_require__(16));
+            __export(__webpack_require__(15));
+            __export(__webpack_require__(10));
+            __export(__webpack_require__(11));
+            __export(__webpack_require__(13));
+            __export(__webpack_require__(31));
 
 
-/***/ },
-/* 51 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 51 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module url */ /** for typedoc */
-	__export(__webpack_require__(28));
-	__export(__webpack_require__(23));
-	__export(__webpack_require__(27));
-	__export(__webpack_require__(29));
+            }
+            /** @module url */ /** for typedoc */
+            __export(__webpack_require__(28));
+            __export(__webpack_require__(23));
+            __export(__webpack_require__(27));
+            __export(__webpack_require__(29));
 
 
-/***/ },
-/* 52 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 52 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
+            "use strict";
+            function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module view */ /** for typedoc */
-	__export(__webpack_require__(37));
+            }
+            /** @module view */ /** for typedoc */
+            __export(__webpack_require__(37));
 
 
-/***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 53 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/**
+            /**
 	 * # UI-Router for Angular 1
 	 *
 	 * - Provides an implementation for the [[CoreServices]] API, based on angular 1 services.
@@ -6450,21 +6450,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @module ng1
 	 * @preferred
 	 */
-	"use strict";
-	/** for typedoc */
-	var router_1 = __webpack_require__(26);
-	var coreservices_1 = __webpack_require__(6);
-	var common_1 = __webpack_require__(3);
-	var hof_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(4);
-	var resolveService_1 = __webpack_require__(54);
-	var trace_1 = __webpack_require__(12);
-	var views_1 = __webpack_require__(55);
-	var templateFactory_1 = __webpack_require__(56);
-	var onEnterExitRetain_1 = __webpack_require__(57);
-	/** @hidden */
-	var app = angular.module("ui.router.angular1", []);
-	/**
+            "use strict";
+            /** for typedoc */
+            var router_1 = __webpack_require__(26);
+            var coreservices_1 = __webpack_require__(6);
+            var common_1 = __webpack_require__(3);
+            var hof_1 = __webpack_require__(5);
+            var predicates_1 = __webpack_require__(4);
+            var resolveService_1 = __webpack_require__(54);
+            var trace_1 = __webpack_require__(12);
+            var views_1 = __webpack_require__(55);
+            var templateFactory_1 = __webpack_require__(56);
+            var onEnterExitRetain_1 = __webpack_require__(57);
+            /** @hidden */
+            var app = angular.module("ui.router.angular1", []);
+            /**
 	 * @ngdoc overview
 	 * @name ui.router.util
 	 *
@@ -6475,8 +6475,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * in your angular app (use {@link ui.router} module instead).
 	 *
 	 */
-	angular.module('ui.router.util', ['ng', 'ui.router.init']);
-	/**
+            angular.module('ui.router.util', ['ng', 'ui.router.init']);
+            /**
 	 * @ngdoc overview
 	 * @name ui.router.router
 	 *
@@ -6488,8 +6488,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * This module is a dependency of other sub-modules. Do not include this module as a dependency
 	 * in your angular app (use {@link ui.router} module instead).
 	 */
-	angular.module('ui.router.router', ['ui.router.util']);
-	/**
+            angular.module('ui.router.router', ['ui.router.util']);
+            /**
 	 * @ngdoc overview
 	 * @name ui.router.state
 	 *
@@ -6503,8 +6503,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * in your angular app (use {@link ui.router} module instead).
 	 *
 	 */
-	angular.module('ui.router.state', ['ui.router.router', 'ui.router.util', 'ui.router.angular1']);
-	/**
+            angular.module('ui.router.state', ['ui.router.router', 'ui.router.util', 'ui.router.angular1']);
+            /**
 	 * @ngdoc overview
 	 * @name ui.router
 	 *
@@ -6540,9 +6540,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * </html>
 	 * </pre>
 	 */
-	angular.module('ui.router', ['ui.router.init', 'ui.router.state', 'ui.router.angular1']);
-	angular.module('ui.router.compat', ['ui.router']);
-	/**
+            angular.module('ui.router', ['ui.router.init', 'ui.router.state', 'ui.router.angular1']);
+            angular.module('ui.router.compat', ['ui.router']);
+            /**
 	 * Annotates a controller expression (may be a controller function(), a "controllername",
 	 * or "controllername as name")
 	 *
@@ -6554,7 +6554,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * returns an array of strings, which are the arguments of the controller expression
 	 */
-	function annotateController(controllerExpression) {
+            function annotateController(controllerExpression) {
 	    var $injector = coreservices_1.services.$injector;
 	    var $controller = $injector.get("$controller");
 	    var oldInstantiate = $injector.instantiate;
@@ -6570,18 +6570,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    finally {
 	        $injector.instantiate = oldInstantiate;
 	    }
-	}
-	exports.annotateController = annotateController;
-	runBlock.$inject = ['$injector', '$q'];
-	function runBlock($injector, $q) {
+            }
+            exports.annotateController = annotateController;
+            runBlock.$inject = ['$injector', '$q'];
+            function runBlock($injector, $q) {
 	    coreservices_1.services.$injector = $injector;
 	    coreservices_1.services.$q = $q;
-	}
-	app.run(runBlock);
-	var router = null;
-	ng1UIRouter.$inject = ['$locationProvider'];
-	/** This angular 1 provider instantiates a Router and exposes its services via the angular injector */
-	function ng1UIRouter($locationProvider) {
+            }
+            app.run(runBlock);
+            var router = null;
+            ng1UIRouter.$inject = ['$locationProvider'];
+            /** This angular 1 provider instantiates a Router and exposes its services via the angular injector */
+            function ng1UIRouter($locationProvider) {
 	    // Create a new instance of the Router when the ng1UIRouterProvider is initialized
 	    router = new router_1.UIRouter();
 	    // Apply ng1 specific StateBuilder code for `views`, `resolve`, and `onExit/Retain/Enter` properties
@@ -6620,19 +6620,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	        common_1.bindFunctions($browser, coreservices_1.services.locationConfig, $browser, ['baseHref']);
 	        return router;
 	    }
-	}
-	function $stateParamsFactory(ng1UIRouter) {
+            }
+            function $stateParamsFactory(ng1UIRouter) {
 	    return ng1UIRouter.globals.params;
-	}
-	// The 'ui.router' ng1 module depends on 'ui.router.init' module.
-	angular.module('ui.router.init', []).provider("ng1UIRouter", ng1UIRouter);
-	// This effectively calls $get() to init when we enter runtime
-	angular.module('ui.router.init').run(['ng1UIRouter', function (ng1UIRouter) { }]);
-	// $urlMatcherFactory service and $urlMatcherFactoryProvider
-	angular.module('ui.router.util').provider('$urlMatcherFactory', ['ng1UIRouterProvider', function () { return router.urlMatcherFactory; }]);
-	angular.module('ui.router.util').run(['$urlMatcherFactory', function ($urlMatcherFactory) { }]);
-	// $urlRouter service and $urlRouterProvider
-	function getUrlRouterProvider() {
+            }
+            // The 'ui.router' ng1 module depends on 'ui.router.init' module.
+            angular.module('ui.router.init', []).provider("ng1UIRouter", ng1UIRouter);
+            // This effectively calls $get() to init when we enter runtime
+            angular.module('ui.router.init').run(['ng1UIRouter', function (ng1UIRouter) { }]);
+            // $urlMatcherFactory service and $urlMatcherFactoryProvider
+            angular.module('ui.router.util').provider('$urlMatcherFactory', ['ng1UIRouterProvider', function () { return router.urlMatcherFactory; }]);
+            angular.module('ui.router.util').run(['$urlMatcherFactory', function ($urlMatcherFactory) { }]);
+            // $urlRouter service and $urlRouterProvider
+            function getUrlRouterProvider() {
 	    router.urlRouterProvider["$get"] = function () {
 	        router.urlRouter.update(true);
 	        if (!this.interceptDeferred)
@@ -6640,52 +6640,52 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return router.urlRouter;
 	    };
 	    return router.urlRouterProvider;
-	}
-	angular.module('ui.router.router').provider('$urlRouter', ['ng1UIRouterProvider', getUrlRouterProvider]);
-	angular.module('ui.router.router').run(['$urlRouter', function ($urlRouter) { }]);
-	// $state service and $stateProvider
-	// $urlRouter service and $urlRouterProvider
-	function getStateProvider() {
+            }
+            angular.module('ui.router.router').provider('$urlRouter', ['ng1UIRouterProvider', getUrlRouterProvider]);
+            angular.module('ui.router.router').run(['$urlRouter', function ($urlRouter) { }]);
+            // $state service and $stateProvider
+            // $urlRouter service and $urlRouterProvider
+            function getStateProvider() {
 	    router.stateProvider["$get"] = function () {
 	        // Autoflush once we are in runtime
 	        router.stateRegistry.stateQueue.autoFlush(router.stateService);
 	        return router.stateService;
 	    };
 	    return router.stateProvider;
-	}
-	angular.module('ui.router.state').provider('$state', ['ng1UIRouterProvider', getStateProvider]);
-	angular.module('ui.router.state').run(['$state', function ($state) { }]);
-	// $stateParams service
-	angular.module('ui.router.state').factory('$stateParams', ['ng1UIRouter', function (ng1UIRouter) {
+            }
+            angular.module('ui.router.state').provider('$state', ['ng1UIRouterProvider', getStateProvider]);
+            angular.module('ui.router.state').run(['$state', function ($state) { }]);
+            // $stateParams service
+            angular.module('ui.router.state').factory('$stateParams', ['ng1UIRouter', function (ng1UIRouter) {
 	        return ng1UIRouter.globals.params;
 	    }]);
-	// $transitions service and $transitionsProvider
-	function getTransitionsProvider() {
+            // $transitions service and $transitionsProvider
+            function getTransitionsProvider() {
 	    router.transitionService["$get"] = function () { return router.transitionService; };
 	    return router.transitionService;
-	}
-	angular.module('ui.router.state').provider('$transitions', ['ng1UIRouterProvider', getTransitionsProvider]);
-	// $templateFactory service
-	angular.module('ui.router.util').factory('$templateFactory', ['ng1UIRouter', function () { return new templateFactory_1.TemplateFactory(); }]);
-	// The $view service
-	angular.module('ui.router').factory('$view', function () { return router.viewService; });
-	// The old $resolve service
-	angular.module('ui.router').factory('$resolve', resolveService_1.resolveFactory);
-	// $trace service
-	angular.module("ui.router").service("$trace", function () { return trace_1.trace; });
-	watchDigests.$inject = ['$rootScope'];
-	function watchDigests($rootScope) {
+            }
+            angular.module('ui.router.state').provider('$transitions', ['ng1UIRouterProvider', getTransitionsProvider]);
+            // $templateFactory service
+            angular.module('ui.router.util').factory('$templateFactory', ['ng1UIRouter', function () { return new templateFactory_1.TemplateFactory(); }]);
+            // The $view service
+            angular.module('ui.router').factory('$view', function () { return router.viewService; });
+            // The old $resolve service
+            angular.module('ui.router').factory('$resolve', resolveService_1.resolveFactory);
+            // $trace service
+            angular.module("ui.router").service("$trace", function () { return trace_1.trace; });
+            watchDigests.$inject = ['$rootScope'];
+            function watchDigests($rootScope) {
 	    $rootScope.$watch(function () { trace_1.trace.approximateDigests++; });
-	}
-	exports.watchDigests = watchDigests;
-	angular.module("ui.router").run(watchDigests);
-	exports.getLocals = function (ctx) {
+            }
+            exports.watchDigests = watchDigests;
+            angular.module("ui.router").run(watchDigests);
+            exports.getLocals = function (ctx) {
 	    var tokens = ctx.getTokens().filter(predicates_1.isString);
 	    var tuples = tokens.map(function (key) { return [key, ctx.getResolvable(key).data]; });
 	    return tuples.reduce(common_1.applyPairs, {});
-	};
-	/** Injectable services */
-	/**
+            };
+            /** Injectable services */
+            /**
 	 * An injectable service object which has the current state parameters
 	 *
 	 * This angular service (singleton object) holds the current state parameters.
@@ -6724,48 +6724,48 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * }
 	 * ```
 	 */
-	var $stateParams;
-	/**
+            var $stateParams;
+            /**
 	 * An injectable service primarily used to register transition hooks
 	 *
 	 * This angular service exposes the [[TransitionService]] singleton, which is primarily used to add transition hooks.
 	 *
 	 * The same object is also exposed as [[$transitionsProvider]] for injection during angular config time.
 	 */
-	var $transitions;
-	/**
+            var $transitions;
+            /**
 	 * A config-time injectable provider primarily used to register transition hooks
 	 *
 	 * This angular provider exposes the [[TransitionService]] singleton, which is primarily used to add transition hooks.
 	 *
 	 * The same object is also exposed as [[$transitions]] for injection at runtime.
 	 */
-	var $transitionsProvider;
-	/**
+            var $transitionsProvider;
+            /**
 	 * An injectable service used to query for current state information.
 	 *
 	 * This angular service exposes the [[StateService]] singleton.
 	 */
-	var $state;
-	/**
+            var $state;
+            /**
 	 * A config-time injectable provider used to register states.
 	 *
 	 * This angular service exposes the [[StateProvider]] singleton.
 	 */
-	var $stateProvider;
-	/**
+            var $stateProvider;
+            /**
 	 * A config-time injectable provider used to manage the URL.
 	 *
 	 * This angular service exposes the [[UrlRouterProvider]] singleton.
 	 */
-	var $urlRouterProvider;
-	/**
+            var $urlRouterProvider;
+            /**
 	 * An injectable service used to configure URL redirects.
 	 *
 	 * This angular service exposes the [[UrlRouter]] singleton.
 	 */
-	var $urlRouter;
-	/**
+            var $urlRouter;
+            /**
 	 * An injectable service used to configure the URL.
 	 *
 	 * This service is used to set url mapping options, and create [[UrlMatcher]] objects.
@@ -6773,8 +6773,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * This angular service exposes the [[UrlMatcherFactory]] singleton.
 	 * The singleton is also exposed at config-time as the [[$urlMatcherFactoryProvider]].
 	 */
-	var $urlMatcherFactory;
-	/**
+            var $urlMatcherFactory;
+            /**
 	 * An injectable service used to configure the URL.
 	 *
 	 * This service is used to set url mapping options, and create [[UrlMatcher]] objects.
@@ -6782,24 +6782,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * This angular service exposes the [[UrlMatcherFactory]] singleton at config-time.
 	 * The singleton is also exposed at runtime as the [[$urlMatcherFactory]].
 	 */
-	var $urlMatcherFactoryProvider;
+            var $urlMatcherFactoryProvider;
 
 
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 54 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module ng1 */ /** */
-	var stateObject_1 = __webpack_require__(42);
-	var node_1 = __webpack_require__(21);
-	var resolveContext_1 = __webpack_require__(17);
-	var common_1 = __webpack_require__(3);
-	var stateBuilder_1 = __webpack_require__(40);
-	/**
+            "use strict";
+            /** @module ng1 */ /** */
+            var stateObject_1 = __webpack_require__(42);
+            var node_1 = __webpack_require__(21);
+            var resolveContext_1 = __webpack_require__(17);
+            var common_1 = __webpack_require__(3);
+            var stateBuilder_1 = __webpack_require__(40);
+            /**
 	 * Implementation of the legacy `$resolve` service for angular 1.
 	 */
-	var $resolve = {
+            var $resolve = {
 	    /**
 	     * Asynchronously injects a resolve block.
 	     *
@@ -6847,27 +6847,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	        };
 	        return parent ? parent.then(resolveData) : resolveData({});
 	    }
-	};
-	/** @hidden */
-	exports.resolveFactory = function () { return $resolve; };
+            };
+            /** @hidden */
+            exports.resolveFactory = function () { return $resolve; };
 
 
-/***/ },
-/* 55 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 55 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var common_1 = __webpack_require__(3);
-	var strings_1 = __webpack_require__(9);
-	var view_1 = __webpack_require__(37);
-	var predicates_1 = __webpack_require__(4);
-	var coreservices_1 = __webpack_require__(6);
-	var trace_1 = __webpack_require__(12);
-	var templateFactory_1 = __webpack_require__(56);
-	var resolveContext_1 = __webpack_require__(17);
-	var resolvable_1 = __webpack_require__(19);
-	exports.ng1ViewConfigFactory = function (path, view) { return new Ng1ViewConfig(path, view); };
-	/**
+            "use strict";
+            var common_1 = __webpack_require__(3);
+            var strings_1 = __webpack_require__(9);
+            var view_1 = __webpack_require__(37);
+            var predicates_1 = __webpack_require__(4);
+            var coreservices_1 = __webpack_require__(6);
+            var trace_1 = __webpack_require__(12);
+            var templateFactory_1 = __webpack_require__(56);
+            var resolveContext_1 = __webpack_require__(17);
+            var resolvable_1 = __webpack_require__(19);
+            exports.ng1ViewConfigFactory = function (path, view) { return new Ng1ViewConfig(path, view); };
+            /**
 	 * This is a [[StateBuilder.builder]] function for angular1 `views`.
 	 *
 	 * When the [[StateBuilder]] builds a [[State]] object from a raw [[StateDeclaration]], this builder
@@ -6876,7 +6876,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * If no `views: {}` property exists on the [[StateDeclaration]], then it creates the `views` object
 	 * and applies the state-level configuration to a view named `$default`.
 	 */
-	function ng1ViewsBuilder(state) {
+            function ng1ViewsBuilder(state) {
 	    var tplKeys = ['templateProvider', 'templateUrl', 'template', 'notify', 'async'], ctrlKeys = ['controller', 'controllerProvider', 'controllerAs', 'resolveAs'], compKeys = ['component', 'bindings'], nonCompKeys = tplKeys.concat(ctrlKeys), allKeys = compKeys.concat(nonCompKeys);
 	    var views = {}, viewsObject = state.views || { "$default": common_1.pick(state, allKeys) };
 	    common_1.forEach(viewsObject, function (config, name) {
@@ -6918,30 +6918,30 @@ return /******/ (function(modules) { // webpackBootstrap
 	        views[name] = config;
 	    });
 	    return views;
-	}
-	exports.ng1ViewsBuilder = ng1ViewsBuilder;
-	// for ng 1.2 style, process the scope: { input: "=foo" }
-	// for ng 1.3 through ng 1.5, process the component's bindToController: { input: "=foo" } object
-	var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {})
+            }
+            exports.ng1ViewsBuilder = ng1ViewsBuilder;
+            // for ng 1.2 style, process the scope: { input: "=foo" }
+            // for ng 1.3 through ng 1.5, process the component's bindToController: { input: "=foo" } object
+            var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {})
 	    .map(function (key) { return [key, /^([=<@])[?]?(.*)/.exec(bindingsObj[key])]; }) // [ 'input', [ '=foo', '=', 'foo' ] ]
 	    .filter(function (tuple) { return predicates_1.isDefined(tuple) && predicates_1.isDefined(tuple[1]); }) // skip malformed values
 	    .map(function (tuple) { return ({ name: tuple[1][2] || tuple[0], type: tuple[1][1] }); }); }; // { name: ('foo' || 'input'), type: '=' }
-	// Given a directive definition, find its object input attributes
-	// Use different properties, depending on the type of directive (component, bindToController, normal)
-	var getBindings = function (def) {
+            // Given a directive definition, find its object input attributes
+            // Use different properties, depending on the type of directive (component, bindToController, normal)
+            var getBindings = function (def) {
 	    if (predicates_1.isObject(def.bindToController))
 	        return scopeBindings(def.bindToController);
 	    return scopeBindings(def.scope);
-	};
-	// Gets all the directive(s)' inputs ('@', '=', and '<')
-	function getComponentInputs($injector, name) {
+            };
+            // Gets all the directive(s)' inputs ('@', '=', and '<')
+            function getComponentInputs($injector, name) {
 	    var cmpDefs = $injector.get(name + "Directive"); // could be multiple
 	    if (!cmpDefs || !cmpDefs.length)
 	        throw new Error("Unable to find component named '" + name + "'");
 	    return cmpDefs.map(getBindings).reduce(common_1.unnestR, []);
-	}
-	var id = 0;
-	var Ng1ViewConfig = (function () {
+            }
+            var id = 0;
+            var Ng1ViewConfig = (function () {
 	    function Ng1ViewConfig(path, viewDecl) {
 	        this.path = path;
 	        this.viewDecl = viewDecl;
@@ -6991,24 +6991,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return resolvable.get(context);
 	    };
 	    return Ng1ViewConfig;
-	}());
-	exports.Ng1ViewConfig = Ng1ViewConfig;
+            }());
+            exports.Ng1ViewConfig = Ng1ViewConfig;
 
 
-/***/ },
-/* 56 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 56 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/** @module view */ /** for typedoc */
-	var predicates_1 = __webpack_require__(4);
-	var coreservices_1 = __webpack_require__(6);
-	var common_1 = __webpack_require__(3);
-	var resolvable_1 = __webpack_require__(19);
-	/**
+            "use strict";
+            /** @module view */ /** for typedoc */
+            var predicates_1 = __webpack_require__(4);
+            var coreservices_1 = __webpack_require__(6);
+            var common_1 = __webpack_require__(3);
+            var resolvable_1 = __webpack_require__(19);
+            /**
 	 * Service which manages loading of templates from a ViewConfig.
 	 */
-	var TemplateFactory = (function () {
+            var TemplateFactory = (function () {
 	    function TemplateFactory() {
 	    }
 	    /**
@@ -7077,27 +7077,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    ;
 	    return TemplateFactory;
-	}());
-	exports.TemplateFactory = TemplateFactory;
+            }());
+            exports.TemplateFactory = TemplateFactory;
 
 
-/***/ },
-/* 57 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 57 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var coreservices_1 = __webpack_require__(6);
-	var services_1 = __webpack_require__(53);
-	var resolveContext_1 = __webpack_require__(17);
-	var common_1 = __webpack_require__(3);
-	/**
+            "use strict";
+            var coreservices_1 = __webpack_require__(6);
+            var services_1 = __webpack_require__(53);
+            var resolveContext_1 = __webpack_require__(17);
+            var common_1 = __webpack_require__(3);
+            /**
 	 * This is a [[StateBuilder.builder]] function for angular1 `onEnter`, `onExit`,
 	 * `onRetain` callback hooks on a [[Ng1StateDeclaration]].
 	 *
 	 * When the [[StateBuilder]] builds a [[State]] object from a raw [[StateDeclaration]], this builder
 	 * ensures that those hooks are injectable for angular-ui-router (ng1).
 	 */
-	exports.getStateHookBuilder = function (hookName) {
+            exports.getStateHookBuilder = function (hookName) {
 	    return function stateHookBuilder(state, parentFn) {
 	        var hook = state[hookName];
 	        function decoratedNg1Hook(trans, state) {
@@ -7106,26 +7106,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	        return hook ? decoratedNg1Hook : undefined;
 	    };
-	};
+            };
 
 
-/***/ },
-/* 58 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 58 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	/**
+            "use strict";
+            /**
 	 * These are the UI-Router angular 1 directives.
 	 *
 	 * These directives are used in templates to create viewports and navigate to states
 	 *
 	 * @preferred @module ng1_directives
 	 */ /** for typedoc */
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var hof_1 = __webpack_require__(5);
-	/** @hidden */
-	function parseStateRef(ref, current) {
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var hof_1 = __webpack_require__(5);
+            /** @hidden */
+            function parseStateRef(ref, current) {
 	    var preparsed = ref.match(/^\s*({[^}]*})\s*$/), parsed;
 	    if (preparsed)
 	        ref = current + '(' + preparsed[1] + ')';
@@ -7133,15 +7133,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (!parsed || parsed.length !== 4)
 	        throw new Error("Invalid state ref '" + ref + "'");
 	    return { state: parsed[1], paramExpr: parsed[3] || null };
-	}
-	/** @hidden */
-	function stateContext(el) {
+            }
+            /** @hidden */
+            function stateContext(el) {
 	    var $uiView = el.parent().inheritedData('$uiView');
 	    var path = hof_1.parse('$cfg.path')($uiView);
 	    return path ? common_1.tail(path).state.name : undefined;
-	}
-	/** @hidden */
-	function getTypeInfo(el) {
+            }
+            /** @hidden */
+            function getTypeInfo(el) {
 	    // SVGAElement does not use the href attribute, but rather the 'xlinkHref' attribute.
 	    var isSvg = Object.prototype.toString.call(el.prop('href')) === '[object SVGAnimatedString]';
 	    var isForm = el[0].nodeName === "FORM";
@@ -7150,9 +7150,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        isAnchor: el.prop("tagName").toUpperCase() === "A",
 	        clickable: !isForm
 	    };
-	}
-	/** @hidden */
-	function clickHook(el, $state, $timeout, type, current) {
+            }
+            /** @hidden */
+            function clickHook(el, $state, $timeout, type, current) {
 	    return function (e) {
 	        var button = e.which || e.button, target = current();
 	        if (!(button > 1 || e.ctrlKey || e.metaKey || e.shiftKey || el.attr('target'))) {
@@ -7169,12 +7169,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	            };
 	        }
 	    };
-	}
-	/** @hidden */
-	function defaultOpts(el, $state) {
+            }
+            /** @hidden */
+            function defaultOpts(el, $state) {
 	    return { relative: stateContext(el) || $state.$current, inherit: true };
-	}
-	/**
+            }
+            /**
 	 * `ui-sref`: A directive for linking to a state
 	 *
 	 * A directive that binds a link (`<a>` tag) to a state.
@@ -7236,7 +7236,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {string} ui-sref 'stateName' can be any valid absolute or relative state
 	 * @param {Object} ui-sref-opts options to pass to [[StateService.go]]
 	 */
-	var uiSref = ['$state', '$timeout',
+            var uiSref = ['$state', '$timeout',
 	    function $StateRefDirective($state, $timeout) {
 	        return {
 	            restrict: 'A',
@@ -7271,7 +7271,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        };
 	    }];
-	/**
+            /**
 	 * `ui-state`: A dynamic version of `ui-sref`
 	 *
 	 * Much like ui-sref, but will accept named $scope properties to evaluate for a state definition,
@@ -7288,7 +7288,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {Object} ui-state-params params to pass to [[StateService.href]]
 	 * @param {Object} ui-state-opts options to pass to [[StateService.go]]
 	 */
-	var uiState = ['$state', '$timeout',
+            var uiState = ['$state', '$timeout',
 	    function $StateRefDynamicDirective($state, $timeout) {
 	        return {
 	            restrict: 'A',
@@ -7320,7 +7320,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        };
 	    }];
-	/**
+            /**
 	 * `ui-sref-active` and `ui-sref-active-eq`: A directive that adds a CSS class when a `ui-sref` is active
 	 *
 	 * A directive working alongside ui-sref to add classes to an element when the
@@ -7400,7 +7400,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * to both the <div> and <a> elements. It is important to note that the state
 	 * names/globs passed to ui-sref-active shadow the state provided by ui-sref.
 	 */
-	var uiSrefActive = ['$state', '$stateParams', '$interpolate', '$transitions',
+            var uiSrefActive = ['$state', '$stateParams', '$interpolate', '$transitions',
 	    function $StateRefActiveDirective($state, $stateParams, $interpolate, $transitions) {
 	        return {
 	            restrict: "A",
@@ -7496,20 +7496,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	                }]
 	        };
 	    }];
-	angular.module('ui.router.state')
+            angular.module('ui.router.state')
 	    .directive('uiSref', uiSref)
 	    .directive('uiSrefActive', uiSrefActive)
 	    .directive('uiSrefActiveEq', uiSrefActive)
 	    .directive('uiState', uiState);
 
 
-/***/ },
-/* 59 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 59 */
+        /***/ function(module, exports) {
 
-	/** @module state */ /** for typedoc */
-	"use strict";
-	/**
+            /** @module state */ /** for typedoc */
+            "use strict";
+            /**
 	 * @ngdoc filter
 	 * @name ui.router.state.filter:isState
 	 *
@@ -7518,16 +7518,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @description
 	 * Translates to {@link ui.router.state.$state#methods_is $state.is("stateName")}.
 	 */
-	$IsStateFilter.$inject = ['$state'];
-	function $IsStateFilter($state) {
+            $IsStateFilter.$inject = ['$state'];
+            function $IsStateFilter($state) {
 	    var isFilter = function (state, params, options) {
 	        return $state.is(state, params, options);
 	    };
 	    isFilter.$stateful = true;
 	    return isFilter;
-	}
-	exports.$IsStateFilter = $IsStateFilter;
-	/**
+            }
+            exports.$IsStateFilter = $IsStateFilter;
+            /**
 	 * @ngdoc filter
 	 * @name ui.router.state.filter:includedByState
 	 *
@@ -7536,35 +7536,35 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @description
 	 * Translates to {@link ui.router.state.$state#methods_includes $state.includes('fullOrPartialStateName')}.
 	 */
-	$IncludedByStateFilter.$inject = ['$state'];
-	function $IncludedByStateFilter($state) {
+            $IncludedByStateFilter.$inject = ['$state'];
+            function $IncludedByStateFilter($state) {
 	    var includesFilter = function (state, params, options) {
 	        return $state.includes(state, params, options);
 	    };
 	    includesFilter.$stateful = true;
 	    return includesFilter;
-	}
-	exports.$IncludedByStateFilter = $IncludedByStateFilter;
-	angular.module('ui.router.state')
+            }
+            exports.$IncludedByStateFilter = $IncludedByStateFilter;
+            angular.module('ui.router.state')
 	    .filter('isState', $IsStateFilter)
 	    .filter('includedByState', $IncludedByStateFilter);
 
 
-/***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
+            /***/ },
+        /* 60 */
+        /***/ function(module, exports, __webpack_require__) {
 
-	/** @module ng1_directives */ /** for typedoc */
-	"use strict";
-	var common_1 = __webpack_require__(3);
-	var predicates_1 = __webpack_require__(4);
-	var trace_1 = __webpack_require__(12);
-	var views_1 = __webpack_require__(55);
-	var hof_1 = __webpack_require__(5);
-	var resolveContext_1 = __webpack_require__(17);
-	var strings_1 = __webpack_require__(9);
-	var services_1 = __webpack_require__(53);
-	/**
+            /** @module ng1_directives */ /** for typedoc */
+            "use strict";
+            var common_1 = __webpack_require__(3);
+            var predicates_1 = __webpack_require__(4);
+            var trace_1 = __webpack_require__(12);
+            var views_1 = __webpack_require__(55);
+            var hof_1 = __webpack_require__(5);
+            var resolveContext_1 = __webpack_require__(17);
+            var strings_1 = __webpack_require__(9);
+            var services_1 = __webpack_require__(53);
+            /**
 	 * `ui-view`: A viewport directive which is filled in by a view from the active state.
 	 *
 	 * @param {string=} name A view name. The name should be unique amongst the other views in the
@@ -7693,7 +7693,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * });
 	 * ```
 	 */
-	var uiView = ['$view', '$animate', '$uiViewScroll', '$interpolate', '$q',
+            var uiView = ['$view', '$animate', '$uiViewScroll', '$interpolate', '$q',
 	    function $ViewDirective($view, $animate, $uiViewScroll, $interpolate, $q) {
 	        function getRenderer(attrs, scope) {
 	            return {
@@ -7823,9 +7823,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        };
 	        return directive;
 	    }];
-	$ViewDirectiveFill.$inject = ['$compile', '$controller', '$transitions', '$view', '$timeout'];
-	/** @hidden */
-	function $ViewDirectiveFill($compile, $controller, $transitions, $view, $timeout) {
+            $ViewDirectiveFill.$inject = ['$compile', '$controller', '$transitions', '$view', '$timeout'];
+            /** @hidden */
+            function $ViewDirectiveFill($compile, $controller, $transitions, $view, $timeout) {
 	    var getControllerAs = hof_1.parse('viewDecl.controllerAs');
 	    var getResolveAs = hof_1.parse('viewDecl.resolveAs');
 	    return {
@@ -7881,11 +7881,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	            };
 	        }
 	    };
-	}
-	/** @hidden */
-	var hasComponentImpl = typeof angular.module('ui.router')['component'] === 'function';
-	/** @hidden TODO: move these callbacks to $view and/or `/hooks/components.ts` or something */
-	function registerControllerCallbacks($transitions, controllerInstance, $scope, cfg) {
+            }
+            /** @hidden */
+            var hasComponentImpl = typeof angular.module('ui.router')['component'] === 'function';
+            /** @hidden TODO: move these callbacks to $view and/or `/hooks/components.ts` or something */
+            function registerControllerCallbacks($transitions, controllerInstance, $scope, cfg) {
 	    // Call $onInit() ASAP
 	    if (predicates_1.isFunction(controllerInstance.$onInit) && !(cfg.viewDecl.component && hasComponentImpl))
 	        controllerInstance.$onInit();
@@ -7924,24 +7924,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var criteria = { exiting: viewState.name };
 	        $scope.$on('$destroy', $transitions.onBefore(criteria, controllerInstance.uiCanExit, hookOptions));
 	    }
-	}
-	angular.module('ui.router.state').directive('uiView', uiView);
-	angular.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
+            }
+            angular.module('ui.router.state').directive('uiView', uiView);
+            angular.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 
 
-/***/ },
-/* 61 */
-/***/ function(module, exports) {
+            /***/ },
+        /* 61 */
+        /***/ function(module, exports) {
 
-	"use strict";
-	/**
+            "use strict";
+            /**
 	 * @ngdoc object
 	 * @name ui.router.state.$uiViewScrollProvider
 	 *
 	 * @description
 	 * Provider that returns the {@link ui.router.state.$uiViewScroll} service function.
 	 */
-	function $ViewScrollProvider() {
+            function $ViewScrollProvider() {
 	    var useAnchorScroll = false;
 	    /**
 	     * @ngdoc function
@@ -7979,12 +7979,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	                }, 0, false);
 	            };
 	        }];
-	}
-	angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
+            }
+            angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
 
 
-/***/ }
-/******/ ])
+            /***/ }
+        /******/ ])
 });
 ;
 //# sourceMappingURL=angular-ui-router.js.map
