@@ -1,5 +1,5 @@
 var contact = {
-	template: `
+    template: `
 		<div class="contact">
 			<div class="contact-methods">
 				<h3>How would you like to contact me?</h3>
@@ -18,13 +18,13 @@ var contact = {
 };
 
 angular
-	.module('contact')
-	.component('contact', contact)
-	.config(function ($stateProvider) {
-		$stateProvider
-			.state('contact', {
-				redirectTo: 'contact.phone',
-				url: '/contact',
-				component: 'contact'
-			});
-	});
+    .module('contact')
+    .component('contact', contact)
+    .config(function ($stateProvider) {
+        $stateProvider
+            .state('contact', {
+                redirectTo: 'contact.phone',
+                url: '/contact',
+                component: 'contact'
+            });
+    });

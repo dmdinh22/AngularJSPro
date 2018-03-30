@@ -1,8 +1,8 @@
 var repos = {
-	bindings: {
-		list: '<'
-	},
-	template: `
+    bindings: {
+        list: '<' // maps to list from resolve
+    },
+    template: `
 		<div class="repos"
 			My Repos:
 			<ul>
@@ -18,17 +18,19 @@ var repos = {
 };
 
 angular
-	.module('repos')
-	.component('repos', repos)
-	.config(function ($stateProvider) {
-		$stateProvider
-			.state('repos', {
-				url: '/repos',
-				component: 'repos',
-				resolve: {
-					list: function (ReposService) {
-						return ReposService.getRepos();
-					}
-				}
-			});
-	});
+    .module('repos')
+    .component('repos', repos)
+    .config(function ($stateProvider) {
+        $stateProvider
+            .state('repos', {
+                url: '/repos',
+                component: 'repos',
+                // resolve property on routing definition
+                resolve: {
+                    // creating an array
+                    list: function (ReposService) {
+                        return ReposService.getRepos();
+                    }
+                }
+            });
+    });
