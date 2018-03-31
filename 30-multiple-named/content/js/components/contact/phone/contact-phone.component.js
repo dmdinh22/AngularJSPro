@@ -1,20 +1,21 @@
 var contactPhone = {
-	template: `
+    template: `
 		<div>Contact via phone: +44(0) 7777 888 999</div>
 	`
 };
 
 angular
-	.module('contact')
-	.component('contactPhone', contactPhone)
-	.config(function ($stateProvider) {
-		$stateProvider
-			.state('contact.phone', {
-				url: '^/phone',
-				views: {
-					'details@contact': {
-						component: 'contactPhone'
-					}
-				}
-			});
-	});
+    .module('contact')
+    .component('contactPhone', contactPhone)
+    .config(function ($stateProvider) {
+        $stateProvider
+            .state('contact.phone', {
+                url: '^/phone',
+                views: {
+                    // 'details' named view part of contact state
+                    'details@contact': {
+                        component: 'contactPhone'
+                    }
+                }
+            });
+    });
