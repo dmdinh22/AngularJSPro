@@ -1,5 +1,5 @@
 var contact = {
-	template: `
+    template: `
 		<div class="contact">
 			<div class="contact-methods">
 				<h3>How would you like to contact me?</h3>
@@ -11,20 +11,20 @@ var contact = {
 };
 
 angular
-	.module('contact')
-	.component('contact', contact)
-	.config(function ($stateProvider) {
-		$stateProvider
-			.state('contact', {
-				url: '/contact',
-				views: {
-					// default view
-					'@': {
-						component: 'contact'
-					},
-					'methods@contact': {
-						component: 'contactMethods'
-					}
-				}
-			});
-	});
+    .module('contact')
+    .component('contact', contact)
+    .config(function ($stateProvider) {
+        $stateProvider
+            .state('contact', {
+                url: '/contact',
+                views: {
+                    // default view
+                    '@': {
+                        component: 'contact'
+                    },
+                    'methods@contact': {
+                        component: 'contactMethods'
+                    }
+                }
+            });
+    });

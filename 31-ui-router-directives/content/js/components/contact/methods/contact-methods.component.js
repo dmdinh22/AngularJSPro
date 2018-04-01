@@ -1,5 +1,5 @@
 var contactMethods = {
-	template: `
+    template: `
 		<div>
 			<ul>
 				<li ui-sref-active="active">
@@ -17,5 +17,5 @@ var contactMethods = {
 };
 
 angular
-	.module('contact')
-	.component('contactMethods', contactMethods);
+    .module('contact')
+    .component('contactMethods', contactMethods);

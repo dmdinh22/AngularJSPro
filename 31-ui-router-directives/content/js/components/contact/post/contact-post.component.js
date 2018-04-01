@@ -1,5 +1,5 @@
 var contactPost = {
-	template: `
+    template: `
 		<div>
 			Contact by post:
 			<div>
@@ -12,16 +12,16 @@ var contactPost = {
 };
 
 angular
-	.module('contact')
-	.component('contactPost', contactPost)
-	.config(function ($stateProvider) {
-		$stateProvider
-			.state('contact.post', {
-				url: '/post',
-				views: {
-					'details@contact': {
-						component: 'contactPost'
-					}
-				}
-			});
-	});
+    .module('contact')
+    .component('contactPost', contactPost)
+    .config(function ($stateProvider) {
+        $stateProvider
+            .state('contact.post', {
+                url: '/post',
+                views: {
+                    'details@contact': {
+                        component: 'contactPost'
+                    }
+                }
+            });
+    });
