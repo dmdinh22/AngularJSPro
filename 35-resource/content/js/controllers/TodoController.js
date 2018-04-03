@@ -11,11 +11,12 @@ function TodoController(TodoService) {
     });
 
     ctrl.addTodo = function () {
-        var newTodo = new TodoService();
+        var newTodo = new TodoService(); // instantiate TodoService
         newTodo.title = ctrl.title;
         newTodo.completed = false;
         newTodo.userId = 999;
         newTodo.$save(function () {
+            // add to beginning to array with unshift
             ctrl.list.unshift(newTodo);
         });
     };
