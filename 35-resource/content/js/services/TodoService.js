@@ -1,6 +1,6 @@
 function TodoService($resource) {
 
-	/*!
+    /*!
 
 	 defaults:
 	 {
@@ -15,16 +15,16 @@ function TodoService($resource) {
 
 	*/
 
-	return $resource('http://jsonplaceholder.typicode.com/todos/:id', {
-		id: '@id'
-	}, {
-		update: {
-			method: 'PUT'
-		}
-	});
+    return $resource('http://jsonplaceholder.typicode.com/todos/:id', {
+        id: '@id'
+    }, {
+        update: {
+            method: 'PUT'
+        }
+    });
 
 }
 
 angular
-	.module('app')
-	.service('TodoService', TodoService);
+    .module('app')
+    .service('TodoService', TodoService);
