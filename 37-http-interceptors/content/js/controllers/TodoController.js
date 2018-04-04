@@ -1,12 +1,12 @@
 function TodoController(TodoService) {
-	var ctrl = this;
-	ctrl.getTodos = function () {
-		TodoService.getTodos().then(function (response) {
-			ctrl.todos = response;
-		});
-	};
+    var ctrl = this;
+    ctrl.getTodos = function () {
+        TodoService.getTodos().then(function (response) {
+            ctrl.todos = response;
+        });
+    };
 }
 
 angular
-	.module('app')
-	.controller('TodoController', TodoController);
+    .module('app')
+    .controller('TodoController', TodoController);
