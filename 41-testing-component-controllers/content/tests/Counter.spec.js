@@ -4,7 +4,7 @@ describe('Counter', function () {
     beforeEach(module('app'));
 
     beforeEach(inject(function ($injector) {
-        $componentController = $injector.get('$componentController');
+        $componentController = $injector.get('$componentController'); 
         controller = $componentController('counter',
             { $scope: {}},
             { initialCount: initialCount }
