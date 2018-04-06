@@ -9,9 +9,9 @@ describe('Counter', function () {
         var $rootScope = $injector.get('$rootScope');
 
         element = angular.element('<counter></counter>');
-        $compile(element)($rootScope.$new());
+        $compile(element)($rootScope.$new());// compile against particular scope
 
-        $controller = element.controller('counter');
+        $controller = element.controller('counter'); // referencing counter directive
         $scope = element.isolateScope() || element.scope();
     }));
 
