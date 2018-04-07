@@ -9,7 +9,7 @@ describe('TodoService', function () {
 
         $httpBackend
             .when('GET', 'http://jsonplaceholder.typicode.com/todos')
-            .respond(
+            .respond( // fake response
                 [
                     {
                         id: 1,
