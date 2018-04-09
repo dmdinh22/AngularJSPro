@@ -26,7 +26,7 @@ describe('TodoService', function () {
 
     it('should get a list of todos from the server', function (done) {
         $httpBackend.expectGET('http://jsonplaceholder.typicode.com/todos');
-
+		
         TodoService
             .query()
             .$promise
